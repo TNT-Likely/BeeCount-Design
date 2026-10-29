@@ -1,0 +1,31 @@
+// Controlled companion examples for the package components extracted in Beta.4.
+const fs = require('fs');
+const {appPath} = require('../../scripts/app-paths.cjs');
+const asset = name => `data:image/png;base64,${fs.readFileSync(appPath(name)).toString('base64')}`;
+const logo = asset('assets/images/beeassets_logo.png');
+const screenshot = asset('assets/images/beeassets_dashboard.png');
+const twoFactor = `<div class="bc-surface x4-twofa"><h3>双重验证示例</h3><p class="bc-small">qa@example.invalid</p><div class="x4-methods"><button data-x4-method="totp" aria-pressed="true">验证码</button><button data-x4-method="recovery_code" aria-pressed="false">恢复码</button></div><label class="f-field">验证内容<input data-x4-code inputmode="numeric" maxlength="6" placeholder="6 位数字" aria-label="双重验证内容"></label><p class="bc-small" data-x4-result>合成邮箱，不请求云端验证</p><button class="bc-primary" data-x4-verify>验证示例</button></div>`;
+const promotion = `<section class="x4-products"><h3>产品推荐组件</h3><p class="bc-small">卡片 / 紧凑卡 / 介绍弹窗 / 截图放大</p><button class="x4-promo-card" data-x4-promo><img src="${logo}" alt="产品图标"><span><b>产品推荐示例</b><small>本地素材 · 受控交互</small></span><span>›</span></button><button class="x4-promo-compact" data-x4-promo><img src="${logo}" alt=""><span><b>产品推荐示例</b><small>紧凑卡</small></span><span>↗</span></button><button class="x4-shot" data-x4-shot><img src="${screenshot}" alt="产品截图，点击放大"></button><dialog class="x4-promo-dialog"><button class="x4-close" data-x4-close aria-label="关闭产品弹窗">×</button><h3>产品推荐示例</h3><p>卡片与介绍弹窗复用同一展示数据；链接操作由应用接入。</p><button class="x4-shot" data-x4-shot><img src="${screenshot}" alt="产品截图，点击放大"></button><p class="bc-small">qa@example.invalid</p><button class="bc-secondary" data-x4-external>前往官网</button><button class="bc-primary" data-x4-external>打开商店</button><p class="bc-small" data-x4-event>示例不会打开网站、邮件或商店。</p></dialog><dialog class="x4-image-dialog"><button class="x4-close" data-x4-close aria-label="关闭截图">×</button><img src="${screenshot}" alt="放大的产品截图"></dialog></section>`;
+const typewriter = `<div class="bc-surface x4-typewriter"><h3>逐字文本</h3><p data-x4-typewriter>一笔一笔，记录生活。</p><button class="bc-secondary" data-x4-replay>重播逐字文本</button><p class="bc-small">关闭动效或系统减少动态效果时，直接显示完整文字。</p></div>`;
+exports.enrich = samples => {
+  samples.security += twoFactor;
+  samples.support += promotion;
+  samples.annualReport += '<p class="bc-small">BeeAnnualReportPoster：应用传入已格式化金额与受控章节，含趋势、高光事件、未解锁状态；日历、汇率和隐私计算保留在应用。</p>';
+};
+exports.typewriter = typewriter;
+exports.css = `.x4-twofa input{letter-spacing:3px;text-align:center}.x4-products{margin-top:16px}.x4-promo-card,.x4-promo-compact{display:flex;align-items:center;gap:14px;width:100%;padding:16px;border:1px solid #3387d44d;border-radius:16px;background:linear-gradient(135deg,#3387d41f,#3387d40d);color:var(--bc-ink);text-align:left;margin:10px 0}.x4-promo-card img{width:52px;height:52px;border-radius:12px}.x4-promo-compact{padding:12px;max-width:240px}.x4-promo-compact img{width:32px;height:32px;border-radius:8px}.x4-promo-card span:nth-child(2),.x4-promo-compact span:nth-child(2){flex:1;min-width:0}.x4-products b,.x4-products small{display:block}.x4-products small{font-size:11px;margin-top:4px;color:var(--bc-muted)}.x4-shot{padding:0;border:0;background:transparent;display:block;width:90px;margin:12px 0}.x4-shot img{width:100%;border-radius:10px}.x4-products dialog{border:0;border-radius:22px;padding:24px;background:var(--bc-paper,#fff);color:var(--bc-ink,#25282c);max-height:80vh;max-width:360px;width:calc(100% - 48px);overflow:auto}.x4-products dialog::backdrop{background:#0009}.x4-image-dialog img{width:100%;height:auto}.x4-close{float:right;background:transparent;border:0;color:inherit;font-size:24px;min-width:44px;min-height:44px}.x4-typewriter{margin-top:12px}`;
+exports.css=exports.css.replace(/(^|})([^{}]+){/g,(_,end,selectors)=>end+selectors.split(',').map(s=>'#bee-immersive-suite .bc-phone '+s.trim()).join(',')+'{')+'#bee-immersive-suite .bc-phone .x4-methods{display:flex;background:var(--bc-soft);border-radius:10px;padding:3px;margin:12px 0}#bee-immersive-suite .bc-phone .x4-methods button{flex:1;min-height:38px;font-size:12px;border-radius:8px;text-align:center}#bee-immersive-suite .bc-phone .x4-methods button[aria-pressed=true]{background:var(--bc-paper);box-shadow:0 1px 4px #0001}#bee-immersive-suite .bc-phone .x4-products{font-size:14px}';
+exports.guideJavascript = `(()=>{
+  let timer;
+  document.addEventListener('click',e=>{
+    const method=e.target.closest('[data-x4-method]');
+    if(method){const box=method.closest('.x4-twofa'),input=box.querySelector('[data-x4-code]');box.querySelectorAll('[data-x4-method]').forEach(x=>x.setAttribute('aria-pressed',String(x===method)));input.value='';input.maxLength=method.dataset.x4Method==='totp'?6:20;input.inputMode=method.dataset.x4Method==='totp'?'numeric':'text';input.placeholder=method.dataset.x4Method==='totp'?'6 位数字':'输入恢复码';}
+    const verify=e.target.closest('[data-x4-verify]');
+    if(verify){const box=verify.closest('.x4-twofa'),code=box.querySelector('[data-x4-code]').value,mode=box.querySelector('[aria-pressed="true"]').dataset.x4Method;box.querySelector('[data-x4-result]').textContent=(mode==='totp'&&!/^\\d{6}$/.test(code))?'请输入 6 位数字':code==='000000'?'示例校验失败，请输入其他验证码':'合成验证完成，无网络请求';}
+    const product=e.target.closest('[data-x4-promo]');if(product)product.closest('.x4-products').querySelector('.x4-promo-dialog').showModal();
+    const shot=e.target.closest('[data-x4-shot]');if(shot)shot.closest('.x4-products').querySelector('.x4-image-dialog').showModal();
+    const close=e.target.closest('[data-x4-close]');if(close)close.closest('dialog').close();
+    const external=e.target.closest('[data-x4-external]');if(external)external.closest('dialog').querySelector('[data-x4-event]').textContent=external.textContent+'回调已触发；无外部请求';
+    const replay=e.target.closest('[data-x4-replay]');if(replay){clearInterval(timer);const target=replay.closest('.x4-typewriter').querySelector('[data-x4-typewriter]'),text='一笔一笔，记录生活。';if(matchMedia('(prefers-reduced-motion: reduce)').matches){target.textContent=text;return;}let index=0;target.textContent='';timer=setInterval(()=>{target.textContent=text.slice(0,++index);if(index===text.length)clearInterval(timer);},90);}
+  });
+})();`;
