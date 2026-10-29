@@ -370,4 +370,3 @@ BeeCount 采用 **方案 D：纯黑背景 + 主题色边框** 的暗黑模式设
 - [ ] 分割线 → 使用 `BeeTokens.cardDivider(context)`
 - [ ] 状态颜色 → `success` / `warning` / `error` / `info`
 - [ ] 品牌图标 → `brandLocal` / `brandSupabase` / `brandWebdav` / `brandCloud`
-
