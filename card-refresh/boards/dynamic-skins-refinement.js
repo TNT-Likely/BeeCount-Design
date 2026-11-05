@@ -93,7 +93,7 @@ window.addEventListener('message',event=>{
  if(record.kind==='application'){const entry=entries.get(record.dark?'dark':'light');if(entry)decorate(entry);}else send(record,{motion:state.referencePlay?state.motion:'off'});
  window.skinApplicationReady=entries.size===2&&[...entries.values()].every(e=>e.native.ready&&Array.isArray(e.native.status?.headerSlot));
 });
-for(const frame of $$('[data-frame]')){frame.addEventListener('load',()=>initialize(frame,frame.dataset.frame));frame.src='../prototype/demo.html?embed=1&page='+state.page+'&viewport='+state.viewport+'&brand=shown';}
+for(const frame of $$('[data-frame]')){frame.addEventListener('load',()=>initialize(frame,frame.dataset.frame));frame.src='../prototype/demo.html?skinMaterialOwner=external&embed=1&page='+state.page+'&viewport='+state.viewport+'&brand=shown';}
 for(const frame of $$('[data-reference]'))recordRenderer(frame,'reference-'+frame.dataset.reference,'header',frame.dataset.reference==='dark');
 for(const key of ['skin','page','viewport','application','placement','appearance','theme'])$('#'+key).addEventListener('change',event=>{state[key]=event.target.value;update(key==='page');});
 $('#motion').addEventListener('change',event=>{state.motion=event.target.value;for(const entry of entries.values())decorate(entry);for(const record of renderers.values())if(record.kind==='header')send(record,{motion:state.referencePlay?state.motion:'off'});updateLinks();});

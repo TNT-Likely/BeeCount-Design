@@ -167,7 +167,7 @@ async function initialize(frame,scheme){
 for(const frame of $$('[data-frame]')){
  const scheme=frame.dataset.frame;if(single&&scheme!==single)continue;
  frame.addEventListener('load',()=>initialize(frame,scheme));
- frame.src='../prototype/demo.html?embed=1&page='+state.page+'&viewport='+state.viewport+'&brand=shown';
+ frame.src='../prototype/demo.html?skinMaterialOwner=external&embed=1&page='+state.page+'&viewport='+state.viewport+'&brand=shown';
 }
 for(const key of ['skin','page','viewport','appearance','theme'])$('#'+key).addEventListener('change',event=>{state[key]=event.target.value;update(key==='page');});
 $('#motion').addEventListener('change',event=>{state.motion=event.target.value;for(const entry of frames.values())applyScroll(entry);updateLinks();});

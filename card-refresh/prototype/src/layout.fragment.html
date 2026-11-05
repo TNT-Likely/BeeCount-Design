@@ -1479,12 +1479,8 @@
   // All solid illustration lives in a reserved scene slot; the backdrop only lights the edges.
   const dynamicSkinIds=new Set(['anniversary','anniv_cake']);
   const artCanvas=(scene,skin=settings.skin,cls='')=>`<canvas class="sk-canvas ${cls}" data-sk-scene="${scene}" data-sk-skin="${skin}" aria-hidden="true"></canvas>`;
-  function dynamicSummary() {
-    if(!dynamicSkinIds.has(settings.skin))return summary();
-    const v=totals();
-    const content=`<div class="bc-between">${btn('month',`2026年 ${state.month}月${icon('chevron-down')}`,'选择月份','bc-month-button')}<span class="bc-small">人民币 · CNY</span></div><div class="sk-hero-row"><div class="sk-hero-copy"><div class="bc-summary-label">本月支出${btn('eye',icon(state.hide?'eye-off':'eye'),state.hide?'显示金额':'隐藏金额','bc-eye')}</div><div class="sk-hero-value bc-num"><span class="sk-currency">¥</span>${shown(v.expense)}</div><div class="sk-inscription"><span class="sk-inscription-star">✦</span>1st ANNIVERSARY<small>SINCE 2025.9.10</small></div></div><div class="sk-art-slot">${artCanvas('hero',settings.skin,'sk-hero-art')}</div></div><div class="bc-dual"><div><label>本月收入</label><strong class="bc-num">${shown(v.income)}</strong></div><div><label>本月结余</label><strong class="bc-num">${shown(v.balance)}</strong></div></div><div class="bc-budget" style="padding-top:15px;border-top:1px solid var(--bc-line)"><div class="bc-between"><span>月预算 ¥${shown(v.budget)}</span>${link('page:budget',`剩余 ¥${shown(v.budget-v.expense)}`)}</div><div class="bc-budget-track" role="progressbar" aria-label="预算已用" aria-valuenow="${Math.round(v.expense/v.budget*100)}" aria-valuemin="0" aria-valuemax="100"><span style="width:${Math.min(100,v.expense/v.budget*100)}%"></span></div></div>`;
-    return surface(content,'bc-summary sk-summary',true);
-  }
+  // Skin artwork is PageLayout-owned; the ordinary summary keeps identical geometry.
+  function dynamicSummary() { return summary(); }
   let skinRaf=0,skinLastPaint=0,skinScenes=[],skinVisible=true,skinFixedTime=null,skinDrawCount=0;
   const skinClockStart=performance.now();
   const skinReducedMotion=matchMedia('(prefers-reduced-motion: reduce)');
@@ -1627,7 +1623,7 @@
   function mountSkinScenes(){
     cancelAnimationFrame(skinRaf);skinRaf=0;
     skinScenes=Array.from(phone.querySelectorAll('[data-sk-scene]'));
-    document.getElementById('bee-skin-choice').value=dynamicSkinIds.has(settings.skin)?settings.skin:'none';
+    document.getElementById('bee-skin-choice').value=skinOptions.some(s=>s.id===settings.skin)?settings.skin:'none';
     const previewAccent=document.getElementById('bee-preview-accent');
     previewAccent.innerHTML=(palette.some(p=>p.value===settings.accent)?'':'<option value="'+settings.accent+'">自定义颜色</option>')+palette.map(p=>'<option value="'+p.value+'">'+p.name+'</option>').join('');
     previewAccent.value=settings.accent;
