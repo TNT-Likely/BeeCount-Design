@@ -47,3 +47,11 @@
 #bee-immersive-suite .bgt-remaining small:last-child{line-height:1.5}
 
 #bee-immersive-suite .bgt-shell,#bee-immersive-suite .bgt-sample{--bgt-error:light-dark(#b3261e,#f2b8b5)}
+
+/* Restore the original ring overview while matching the package geometry. */
+#bee-immersive-suite .bgt-total-card{padding:20px;container:budget-overview/inline-size}
+#bee-immersive-suite .bgt-hero .bgt-ring{position:relative;background:none}
+#bee-immersive-suite .bgt-ring>svg{position:absolute;inset:0;width:100%;height:100%}
+#bee-immersive-suite .bgt-hero .bgt-ring>div{position:relative;background:transparent}
+#bee-immersive-suite .bgt-bottom>div:last-child strong{font-size:calc(13px * var(--q-scale,1))}
+@container budget-overview (max-width:289px){#bee-immersive-suite .bgt-ring{width:104px;height:104px}#bee-immersive-suite .bgt-ring>div{width:84px;height:84px}}

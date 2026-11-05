@@ -10,3 +10,8 @@
 #bee-immersive-suite [data-analytics-demo] .a79-total{font-size:calc(34px * var(--q-scale,1));font-weight:600;line-height:1.15;margin:8px 0 20px;overflow:hidden;text-overflow:ellipsis}
 #bee-immersive-suite .a79-formula{display:flex;align-items:center;justify-content:space-between;gap:7px;flex-wrap:wrap;padding:14px;border-radius:14px;background:var(--bc-soft);font-variant-numeric:tabular-nums}
 #bee-immersive-suite .bc-phone[data-immersive="true"]:is([data-skin="anniversary"],[data-skin="anniv_cake"]) .a79-shell .a79-card{background:var(--im-surface);backdrop-filter:blur(13px);box-shadow:0 5px 20px var(--im-shadow),inset 0 1px 0 light-dark(#ffffffaa,#ffffff0c)}
+
+/* Beta5: balance optical scope height against the compact currency notice. */
+#bee-immersive-suite .a79-shell .a79-scope-tabs{height:35px}
+#bee-immersive-suite .a79-shell .a79-scope-tabs button{font-size:13px;min-height:31px}
+@container insights (max-width:350px){#bee-immersive-suite .a79-shell .a79-scope-tabs{height:33px}#bee-immersive-suite .a79-shell .a79-scope-tabs button{font-size:12px;min-height:29px}}
