@@ -76,6 +76,13 @@ function fitRows(elements){
  row.dataset.collapsed=overflow.join('、');more.title=overflow.join('、')+'；点开完整字段';more.setAttribute('aria-label','展开'+overflow.join('、')+'等完整字段');
  }
  }
+ // Use free width for names and labels without changing the two/three-line decision.
+ for(const row of all)for(const line of row.querySelectorAll('.line-slot')){
+  if(line.querySelector('.primary'))continue;
+  const grow=[...line.querySelectorAll('.account-token,.ledger-chip,.tag')];
+  const total=()=>[...line.children].reduce((n,e)=>n+e.getBoundingClientRect().width,0)+Math.max(0,line.children.length-1)*6;
+  for(const el of grow){const before=el.getBoundingClientRect().width,room=Math.max(0,line.getBoundingClientRect().width-total()-1);if(room<=0)break;el.style.maxWidth=(before+room)+'px';el.style.flex='0 0 auto';}
+ }
  for(const row of all)row.dataset.lineCount=String([...row.querySelectorAll('.line-slot')].filter(e=>e.children.length).length);
 }
 

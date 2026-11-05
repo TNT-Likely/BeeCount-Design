@@ -1,7 +1,8 @@
 const {appRoot, appPath} = require("../scripts/app-paths.cjs");
 const fs=require('fs'),path=require('path');
 const apArb=JSON.parse(fs.readFileSync(appPath('lib/l10n/app_zh.arb'),'utf8'));
-const appearanceJs=fs.readFileSync(path.join(__dirname,'src/appearance-settings.js'),'utf8').replace('__APPEARANCE_TEXTS__',()=>JSON.stringify(Object.fromEntries(Object.entries(apArb).filter(([k])=>!k.startsWith('@')&&(k.startsWith('appearance')||['personalizeTitle','personalizeSubtitle','headerSkinTitle','headerSkinNone','mineDisplayScale','mineDisplayScaleSubtitle','baseCurrencyLabel','exchangeRatePageTitle','exchangeRateEntrySubtitle','mineLanguageSettings','widgetManagement','widgetManagementDesc','appLockTitle','appLockDesc','commonClose'].includes(k))))));
+const cardMaterialControls=require('./src/card-material-controls.cjs');
+const appearanceJs=fs.readFileSync(path.join(__dirname,'src/appearance-settings.js'),'utf8').replace('__CARD_MATERIAL_HTML__',()=>JSON.stringify(cardMaterialControls.html)).replace('__APPEARANCE_TEXTS__',()=>JSON.stringify(Object.fromEntries(Object.entries(apArb).filter(([k])=>!k.startsWith('@')&&(k.startsWith('appearance')||['personalizeTitle','personalizeSubtitle','headerSkinTitle','headerSkinNone','mineDisplayScale','mineDisplayScaleSubtitle','baseCurrencyLabel','exchangeRatePageTitle','exchangeRateEntrySubtitle','mineLanguageSettings','widgetManagement','widgetManagementDesc','appLockTitle','appLockDesc','commonClose'].includes(k))))));
 const themeSource=fs.readFileSync(appPath('lib/pages/settings/appearance/bindings/theme_color_options.dart'),'utf8');
 const themeOptions=[...themeSource.matchAll(/value:\s*(const Color\(0x([A-Fa-f0-9]+)\)|Colors\.(\w+)),\s*color:.*?label:\s*l\.(\w+)/gs)].map(([,literal,hex,material,key])=>({name:apArb[key],value:'#'+(hex?hex.slice(-6):{lime:'cddc39'}[material]).toLowerCase()}));
 if(themeOptions.length!==27||themeOptions.some(o=>!o.name))throw Error('Theme palette must preserve all original named options');
@@ -78,6 +79,7 @@ const previewCss=fs.readFileSync(path.join(here,'src/standalone.css'),'utf8');
 change('  restore(window.openai?.widgetState);', '  views.annual=()=>fRender("annual-report"); views.receipt=()=>fRender("receipt-preview"); views.cloud=()=>fRender("cloud-config");\n  restore(window.openai?.widgetState);');
 change('  restore(window.openai?.widgetState);\n  render();','  restore(window.openai?.widgetState);\n'+fs.readFileSync(path.join(here,'src/preview-links.js'),'utf8')+'\n  const qInitialScene=qApplyPreviewLink();\n  render();\n  qReplayPreviewScene(qInitialScene);');
 change('  fRegister();', fs.readFileSync(path.join(here,'src/original-skin-application.js'),'utf8')+'\n  window.beeImmersiveDemo.originalSkin=window.BeeOriginalSkinLayout.install(window.beeImmersiveDemo);\n  fRegister();');
+html += '<style>'+cardMaterialControls.css+'</style><script>'+cardMaterialControls.javascript+'</script>';
 const bridge=`window.openai={widgetState:null,setWidgetState:async function(snapshot){this.widgetState=snapshot;}};`;
 fs.writeFileSync(path.join(here,'source.fragment.html'),html);
 const standalone='<!doctype html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>BeeCount · 卡片设计交互原型</title><style>'+previewCss+'</style><script src="vendor/lucide.min.js"></script><script src="scene-presets.js"></script><script>'+bridge+'</script></head><body>'+html+'</body></html>';

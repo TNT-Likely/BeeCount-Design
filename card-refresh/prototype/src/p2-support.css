@@ -21,3 +21,36 @@
 /* Keep each platform's original SVG colors, matching the approved Flutter About page. */
 #bee-immersive-suite .ps102-platform-icon{width:23px;height:23px;display:block;object-fit:contain}
 #bee-immersive-suite .bc-phone[style*="color-scheme: dark"] .ps102-platform-github,#bee-immersive-suite .bc-phone[style*="color-scheme: dark"] .ps102-platform-douyin{filter:brightness(0) invert(1)}
+
+/* Approved About / family products: a light brand header and distinct product cards. */
+#bee-immersive-suite .ps106-brand{text-align:center;padding:5px 3px 0}
+#bee-immersive-suite .ps106-brand-row{display:flex;justify-content:center;align-items:center;gap:12px}
+#bee-immersive-suite .ps106-brand-logo{width:58px;height:58px;min-height:58px;border:0;background:none;padding:0}
+#bee-immersive-suite .ps106-brand-logo img{width:57px;height:57px}
+#bee-immersive-suite .ps106-brand h2{font-size:22px;margin:0 0 4px;font-weight:700}
+#bee-immersive-suite .ps106-brand small{font-size:11px;color:var(--bc-muted)}
+#bee-immersive-suite .ps106-brand .d104-brand-pill{font-size:9px;padding:2px 5px;border-radius:5px}
+#bee-immersive-suite .ps106-brand h3{font-size:17px;line-height:1.6;margin:16px 0 5px;font-weight:600}
+#bee-immersive-suite .ps106-brand p{font-size:12px;line-height:1.8;color:var(--bc-muted);margin:0}
+#bee-immersive-suite .ps106-story{display:flex;align-items:center;gap:4px;justify-content:center;font-size:11px;min-height:32px;border:0;background:none;color:var(--bc-muted);margin:0 auto 7px}
+#bee-immersive-suite .ps106-story svg{width:12px;height:12px}
+#bee-immersive-suite .ps106-brand .bc-inline-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+#bee-immersive-suite .ps106-about .ps102-socials{display:flex;flex-wrap:nowrap;gap:4px;margin:0}
+#bee-immersive-suite .ps106-about .ps102-socials button{flex:1;min-width:0;width:auto;color:var(--bc-muted)}
+#bee-immersive-suite .ps106-label{font-size:11px;color:var(--bc-muted);margin:3px 3px -3px}
+#bee-immersive-suite .ps106-about .ps102-card>h3:empty{display:none}
+#bee-immersive-suite .ps106-support{display:flex;align-items:center;gap:11px;border:0;border-radius:17px;background:color-mix(in srgb,var(--bc-accent) 12%,transparent);padding:13px;text-align:left;color:var(--bc-ink)}
+#bee-immersive-suite .ps106-support span{flex:1;font-size:12px}
+#bee-immersive-suite .ps106-support small{display:block;font-size:10px;color:var(--bc-muted);margin-top:3px}
+#bee-immersive-suite .ps106-support>svg{width:20px;height:20px}
+#bee-immersive-suite .ps106-product{--product:#d4a017;display:flex;align-items:center;gap:11px;width:100%;min-height:102px;border:0;border-radius:22px;background:radial-gradient(ellipse at top right,#d4a01716,transparent 75%),var(--bc-paper);padding:13px 12px 13px 14px;color:var(--bc-ink);text-align:left}
+#bee-immersive-suite .ps106-product-logo{width:42px;height:42px;border-radius:12px;flex:none}
+#bee-immersive-suite .ps106-product-copy{flex:1;min-width:0;display:grid;gap:5px}
+#bee-immersive-suite .ps106-product-copy b{font-size:14px;font-weight:600}
+#bee-immersive-suite .ps106-product-copy small{font-size:11px;line-height:1.5;color:var(--bc-muted)}
+#bee-immersive-suite .ps106-product-copy em{font-size:10px;font-style:normal;color:#a08738;display:flex;gap:2px;align-items:center;margin-top:2px}
+#bee-immersive-suite .ps106-product-copy em svg{width:11px;height:11px}
+#bee-immersive-suite .ps106-product-art{width:48px;height:60px;flex:none;display:flex;gap:4px;align-items:flex-end;padding-bottom:10px;color:#d4a01788}
+#bee-immersive-suite .ps106-product-art i{width:8px;border-radius:3px;height:15px;background:currentColor}
+#bee-immersive-suite .ps106-product-art i:nth-child(2){height:23px}#bee-immersive-suite .ps106-product-art i:nth-child(3){height:33px}#bee-immersive-suite .ps106-product-art i:nth-child(4){height:44px}
+#bee-immersive-suite .ps106-product-art.dns{align-items:center;justify-content:center;color:#f59e0b88}#bee-immersive-suite .ps106-product-art svg{width:43px;height:43px;stroke-width:1.2}
