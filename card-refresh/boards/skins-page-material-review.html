@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark"><link rel="icon" href="data:,"><title>蜜蜂记账 · 页面皮肤与通透卡片</title><link rel="stylesheet" href="skins-page-material-review.css"></head>
+<body><header class="heading"><div class="eyebrow">皮肤独立评审 · BETA.4 保持关闭</div><h1>一片完整的风景，透过卡片。</h1><p>沿用认可的渐变与原版图案。页面承载皮肤，卡片共享通透材质，内容留在原来的位置。</p></header>
+<section class="controls" aria-label="皮肤预览设置"><div class="control-row">
+<label>外观<select id="appearance"><option value="light">浅色</option><option value="dark">深色</option></select></label>
+<label>页面<select id="page"><option value="home">明细首页</option><option value="report">洞察</option><option value="assets">资产</option><option value="mine">我的</option></select></label>
+<label>屏幕<select id="viewport"><option value="398x844">398 × 844</option><option value="320x568">320 × 568</option><option value="414x932">414 × 932</option></select></label>
+<label>动效<select id="motion"><option value="play">播放</option><option value="paused">暂停当前帧</option><option value="off">静态帧</option></select></label>
+<label class="opacity-control">卡片覆盖 <output id="opacity-label">40%</output><input id="opacity" type="range" min="25" max="80" value="40" step="5" aria-label="卡片材质覆盖比例"></label>
+<button id="plain" aria-pressed="false">无皮肤对照</button><button id="reset">回到顶部</button></div>
+<p class="control-hint"><span class="live-dot"></span><span id="geometry-proof">正在加载主 Demo 并核对布局…</span></p></section>
+<main id="scenes" class="scenes"></main>
+<section class="explanation"><div><span class="eyebrow">统一的页面背景</span><h2>图案完整，卡片自然透出。</h2><p>星座、蛋糕和山势属于整页背景，首卡、图表、账户分组共用同一层材质。切换“无皮肤对照”，可直接比较文字和卡片的位置。</p></div><div><span class="eyebrow">保持熟悉的交互</span><h2>底栏与页面一起适配。</h2><p>周年两款底栏沿用原版 Flutter 装饰，点击仍由主 Demo 响应。这里可以切换页面、滚动、打开菜单；动效会在弹窗或页面隐藏时暂停。</p></div></section>
+<details class="source-note"><summary>预览来源与范围</summary><p>这是可交互 HTML 评审原型，页面结构来自主 Demo，装饰由现有免费皮肤的原版 Flutter Painter 渲染。页面布局与统一卡片材质为 HTML 原型，尚未改 Flutter App，也不代表 Beta.4 已启用皮肤。</p><p>承载思路参考本地商业化 workspace 的统一页面背景和卡片材质。此预览没有复制付费皮肤、商业模块或购买逻辑。使用现有免费的一岁星座、生日蛋糕和静态山峦；原版元素、10 秒场景动画及两款底栏装饰保留。</p><p>本稿去掉文字矩形裁断和卡片局部开窗。卡片覆盖比例是评审控制项，最终是否提供用户调节仍可确认。图片、图标、金额与已有页面交互保持原结构；CanvasKit、浏览器字体与 Android 存在差异，需 Flutter 落地后再做真机验收。</p><p><a href="skins-content-integration-review.html">查看上一版（历史）</a> · <a href="../prototype/demo.html">主 Demo</a> · <a href="../components/ui-components.html">组件设计稿</a></p></details>
+<script src="skins-page-material-review.js?v=material-2"></script></body></html>
