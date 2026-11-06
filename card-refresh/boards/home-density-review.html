@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <link rel="icon" href="data:,">
+  <title>蜜蜂记账 · 首页汇总密度评审</title>
+  <link rel="stylesheet" href="home-density-review.css">
+</head>
+<body>
+  <header class="review-header">
+    <div class="heading-copy"><span class="eyebrow">BEECOUNT · HOME DENSITY</span><h1>让首页多看到几笔。</h1><p>保留月份、收支、结余和预算，用同一块屏幕比较两种压缩策略。</p></div>
+    <a class="back-link" href="../prototype/demo.html?page=home">主 Demo ↗</a>
+  </header>
+  <section class="review-controls" aria-label="对比设置">
+    <label>屏幕<select id="viewport"><option value="398x844">标准屏 · 398 × 844</option><option value="320x568">小屏 · 320 × 568</option><option value="375x667">短屏 · 375 × 667</option><option value="398x900">长屏 · 398 × 900</option><option value="414x932">长屏 · 414 × 932</option></select></label>
+    <label>场景<select id="scenario"><option value="budget">已设置预算</option><option value="unset">未设置预算</option><option value="exceeded">预算超支</option><option value="large">大金额与美元</option><option value="long-ledger">长账本名</option><option value="privacy">金额隐藏</option></select></label>
+    <label>外观<select id="appearance"><option value="light">浅色</option><option value="dark">深色</option></select></label>
+    <label>字体<select id="scale"><option value="1">100%</option><option value="1.4">140% 大字</option></select></label>
+    <button class="reset" id="reset">重置对比</button>
+  </section>
+  <section class="decision" aria-label="设计建议"><div><b>建议 B · 全部缩短</b><p>普通屏也能多看到明细，小屏再收紧一档；不靠隐藏预算或只缩小文字来腾空间。</p></div><span id="comparison-status" role="status">正在加载原版与两版方案…</span></section>
+  <nav class="mobile-tabs" aria-label="切换对比方案"><button data-show="original">当前版本</button><button data-show="a">A · 仅小屏</button><button data-show="b" aria-pressed="true">B · 全部缩短</button></nav>
+  <main id="comparisons" class="comparisons" data-selected="b">
+    <article class="comparison" data-variant="original"><header><div><span class="variant-code">00 / BASELINE</span><h2>当前版本</h2><p>来自当前主 Demo 的同一份首页。</p></div><span class="variant-tag neutral">原版对照</span></header><div class="phone-host"><div class="phone-stage"><iframe title="当前版本首页" data-frame="original"></iframe></div></div><div class="measurements" data-metrics="original"><span>正在测量…</span></div></article>
+    <article class="comparison" data-variant="a"><header><div><span class="variant-code">01 / ADAPTIVE</span><h2>A · 只缩短小屏</h2><p>标准屏保持，小屏和大字模式压缩。</p></div><span class="variant-tag" id="a-state">按屏幕适配</span></header><div class="phone-host"><div class="phone-stage"><iframe title="方案A仅小屏缩短首页" data-frame="a"></iframe></div></div><div class="measurements" data-metrics="a"><span>正在测量…</span></div></article>
+    <article class="comparison recommended" data-variant="b"><header><div><span class="variant-code">02 / COMPACT</span><h2>B · 所有屏幕缩短</h2><p>收支改横排，预算收成细条。</p></div><span class="variant-tag">推荐</span></header><div class="phone-host"><div class="phone-stage"><iframe title="方案B所有屏幕缩短首页" data-frame="b"></iframe></div></div><div class="measurements" data-metrics="b"><span>正在测量…</span></div></article>
+  </main>
+  <section class="design-notes"><article><span class="note-index">01</span><h3>压缩的是结构和间距</h3><p>主支出金额继续突出；收入与结余从“上下两行”改为“名称＋金额”横排，预算沿用完整总额、剩余和进度。</p></article><article><span class="note-index">02</span><h3>预算始终有入口</h3><p>设置过的预算轻点可看明细；未设预算时，用卡片内一条可关闭的提示代替独立大卡。预算超支显示文字和负剩余。</p></article><article><span class="note-index">03</span><h3>大字和长金额有退路</h3><p>金额延续槽位缩放，不使用省略号；次要金额放不下时自然换行。极短屏＋大字允许顶部随整页滚动，避免挤没列表。</p></article></section>
+  <footer class="review-footer"><p>点击月份、隐私开关、预算、账本或账单可检查交互；三个方案的预算明细使用同一组合成数据。对比数字按当前可见区域测量，完整行数受日期分组和行高影响。</p><p>A 的触发条件：屏高 ≤ 740px，或开启 140% 大字。小屏时 A 和 B 使用同一紧凑布局；普通屏只有 B 改变。这里只更新独立评审稿，确认后再同步组件、主 Demo 和 Flutter。</p></footer>
+  <script src="home-density-review.js"></script>
+</body>
+</html>
