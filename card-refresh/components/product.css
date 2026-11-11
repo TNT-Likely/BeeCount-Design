@@ -2794,6 +2794,34 @@
 #bee-immersive-suite .h-ledger-option small{display:block;font-size:11px;color:var(--bc-muted);margin-top:4px}
 #bee-immersive-suite .h-ledger-option[aria-pressed="true"]{background:var(--bc-tint);border-radius:13px}
 
+/* Approved same-screen summary: no divider and no available-money line. */
+#bee-immersive-suite .hc-summary{padding:15px 18px 17px}
+#bee-immersive-suite .hc-context{display:flex;align-items:center;justify-content:space-between;gap:8px;min-height:32px}
+#bee-immersive-suite .hc-context .bc-month-button{font-size:calc(12px * var(--q-scale,1));min-height:32px;color:var(--bc-muted)}
+#bee-immersive-suite .hc-currency{display:flex;align-items:center;gap:5px;font-size:10px;color:var(--bc-muted)}
+#bee-immersive-suite .hc-currency .bc-eye{width:30px;height:30px;display:grid;place-items:center;margin:0;padding:0}
+#bee-immersive-suite .hc-currency svg{width:15px!important;height:15px!important}
+#bee-immersive-suite .hc-primary{display:grid;grid-template-columns:minmax(0,1fr) 86px;align-items:center;gap:13px;margin-top:10px}
+#bee-immersive-suite .hc-money{min-width:0}
+#bee-immersive-suite .hc-caption{font-size:calc(11px * var(--q-scale,1));line-height:1.5;color:var(--bc-muted)}
+#bee-immersive-suite .hc-summary .bc-hero-value{font-size:calc(34px * var(--q-scale,1));line-height:1.3;min-height:44px;margin-top:5px}
+#bee-immersive-suite .hc-summary .bc-hero-value>span{font-size:calc(16px * var(--q-scale,1))!important}
+#bee-immersive-suite .hc-budget-ring{position:relative;width:86px;height:86px;padding:0;display:grid;place-items:center;background:none!important}
+#bee-immersive-suite .hc-budget-ring>svg{position:absolute;inset:0;width:100%!important;height:100%!important;fill:none;transform:rotate(-90deg)}
+#bee-immersive-suite .hc-budget-ring circle{fill:none;stroke-width:1.75;stroke-dasharray:232.5}
+#bee-immersive-suite .hc-ring-track{stroke:var(--bc-soft)}
+#bee-immersive-suite .hc-ring-progress{stroke:var(--bc-accent);stroke-linecap:round;stroke-dashoffset:calc(232.5 * (1 - var(--hc-remaining)))}
+#bee-immersive-suite .hc-budget-ring>span{display:grid;justify-items:center;gap:2px;min-width:0}
+#bee-immersive-suite .hc-budget-ring strong{font-size:22px;line-height:1.2;font-weight:600}
+#bee-immersive-suite .hc-budget-ring small{font-size:9px;line-height:1.5;color:var(--bc-muted)}
+#bee-immersive-suite .hc-summary .bc-dual{margin-top:29px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+#bee-immersive-suite .hc-summary .bc-dual>div{display:grid;gap:5px;min-width:0}
+#bee-immersive-suite .hc-summary .bc-dual>div:last-child{text-align:right}
+#bee-immersive-suite .hc-summary .bc-dual label{font-size:calc(11px * var(--q-scale,1));line-height:1.4}
+#bee-immersive-suite .hc-summary .bc-dual strong{font-size:calc(18px * var(--q-scale,1));line-height:1.35;font-weight:550;white-space:nowrap}
+#bee-immersive-suite [data-q-size="320x568"] .hc-primary{grid-template-columns:minmax(0,1fr) 72px}
+#bee-immersive-suite [data-q-size="320x568"] .hc-budget-ring{width:72px;height:72px}
+
 /* C3 approved transaction row; shared by demo and component specification. */
 #bee-immersive-suite .bc-phone .tx3{--type-scale:var(--q-scale,1);--ink:var(--bc-ink);--surface:var(--bc-paper);--soft:var(--bc-soft);--muted:var(--bc-muted);--expense:var(--bc-green);--income:var(--bc-red);--line:var(--bc-line);background:var(--bc-paper);text-align:left;user-select:none;touch-action:pan-y}
 #bee-immersive-suite .bc-phone .tx-shell{background:var(--bc-paper);position:relative;border-bottom:1px solid var(--bc-line);touch-action:pan-y}

@@ -7,6 +7,7 @@ samples.transactionStates=adaptiveRows.transactionStates;
 samples.assetOverview=require('../prototype/src/asset-overview-samples.cjs');
 samples.choiceChips=require('../prototype/src/foundation-samples.cjs').choiceChips;
 Object.assign(samples,require('../prototype/src/profile-samples.cjs'));
+Object.assign(samples,require('../prototype/src/home-summary-samples.cjs'));
 const extractedComponents=require('../prototype/src/extracted-component-samples.cjs');extractedComponents.enrich(samples);
 const brandSvg=fs.readFileSync(appPath('assets/bee.svg'),'utf8');
 const brandMarks='<div class="g-brand-marks">'+[[76,24,48,'品牌容器'],[38,13,27,'欢迎页头']].map(([size,corner,art,label])=>`<figure><div style="width:${size}px;height:${size}px;border-radius:${corner}px;${size===38?'background:var(--bc-paper)':''}"><span style="width:${art}px;height:${art}px">${brandSvg}</span></div><figcaption>${label} · ${size}</figcaption></figure>`).join('')+'</div>';
@@ -24,7 +25,7 @@ const sections=[
  card('07 · 语义标签与横排选择','详情21px、选择26px视觉胶囊；44px透明触控，保留最近使用、横排多选、搜索与草稿确认。',`<div class="spec-tags">${[['工作日','amber'],['日常','green'],['网购','purple'],['聚餐','pink'],['旅行','teal'],['阅读','blue']].map(tag).join('')}</div>`+(samples.tagPicker||'')),
  card('08 · 输入与校验','标签、输入值、提示文字与错误信息分层显示。',`<label class="f-field">账本名称<input value="日常生活"></label><label class="f-field">分类<select><option>饮品 / 奶茶</option></select></label><label class="f-field">备注<textarea>周末下午的一杯奶茶</textarea></label><label class="f-field spec-invalid">金额<input value="abc"><small>请输入有效金额</small></label><label class="f-field">不可编辑<input value="CNY" disabled></label>`),
  card('09 · 列表与开关','统一图标槽、主副标题、分隔线、尾部操作与开关。',samples.menu),
- card('10 · 金额汇总卡片','首页收支、预算进度与账本切换共用视觉层次。',samples.summary),
+ card('10 · 金额汇总卡片','默认完整长版；更多菜单手动切换紧凑同屏预算环并保存。收入结余上下层级、右对齐，无分隔横线。',samples.summary+'<p class="v4-small">紧凑同屏汇总</p>'+samples.summaryCompact),
  card('11 · 账单行','原币为主，折算与标签为辅；分类图标与账单内容使用独立点击区。',(samples.streamHeader||'')+(samples.dayHeader||'')+adaptiveRows.entry+adaptiveRows.entryForeign),
  card('12 · 分类与二级分类','RecordingSubcategoryGrid：四列自适应，长名称占两格，完整换行并保留图标、选中与禁用。',samples.categories+adaptiveSubcategories.html),
  card('13 · 自定义分类图片','透明 PNG 完整显示；方形图片裁切；加载和失败有固定占位。',samples.customIcons),

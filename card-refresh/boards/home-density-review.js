@@ -214,7 +214,7 @@
           doc.fonts.ready.then(()=>{if(version===generation){measure(entry);updateSummary();}});
         };boot();
       };
-      const url=new URL('../prototype/demo.html',location.href);url.search=new URLSearchParams({page:'home',embed:'1',viewport:state.viewport,scale:state.scale}).toString();
+      const url=new URL('../prototype/demo.html',location.href);url.search=new URLSearchParams({page:'home',embed:'1',homeSummary:'standard',viewport:state.viewport,scale:state.scale}).toString();
       iframe.src=url.href;
     }
     const url=new URL(location.href);for(const k of ['viewport','scenario','appearance','scale','selected'])url.searchParams.set(k,state[k]);history.replaceState(null,'',url);
