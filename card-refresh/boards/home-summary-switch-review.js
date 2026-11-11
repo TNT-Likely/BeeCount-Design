@@ -1,7 +1,7 @@
 (() => {
   'use strict';
   const $=s=>document.querySelector(s),frames=new Map(),params=new URLSearchParams(location.search);
-  const state={viewport:'375x667',appearance:'light',budget:'set',scale:'1',selected:'quiet'};let generation=0;
+  const state={viewport:'375x667',appearance:'light',budget:'set',scale:'1',selected:document.querySelector('.proposals').dataset.selected||'quiet'};let generation=0;
   const icon=n=>({chevron:'<svg viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></svg>',up:'<svg viewBox="0 0 24 24"><path d="m6 15 6-6 6 6"/></svg>',close:'<svg viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></svg>',budget:'<svg viewBox="0 0 24 24"><path d="M21 12a9 9 0 1 1-9-9v9zM15 3.5V9h5.5A9 9 0 0 0 15 3.5Z"/></svg>'}[n]);
   const css=`
   html,body{width:100%!important;height:100%!important;overflow:hidden!important;background:transparent!important}
@@ -93,7 +93,7 @@
   #bee-immersive-suite .hp-ring-budget[data-over=true] .hp-ring-progress{stroke:var(--bc-red)}
   #bee-immersive-suite .hp-remaining{color:var(--bc-muted);font-size:calc(10px * var(--q-scale,1));line-height:1.5;margin-top:8px}
   #bee-immersive-suite .hp-remaining[data-over=true]{color:var(--bc-red)}
-  #bee-immersive-suite .hp-reflow .hp-metrics{margin-top:15px;padding-top:13px;border-top:1px solid var(--bc-line);gap:20px}
+  #bee-immersive-suite .hp-reflow .hp-metrics{margin-top:15px;padding-top:13px;border-top:1px solid transparent;gap:20px}
   #bee-immersive-suite .hp-reflow .hp-metrics>div{display:flex;align-items:baseline;justify-content:space-between;gap:5px}
   #bee-immersive-suite .hp-reflow .hp-metrics label{font-size:10px;white-space:nowrap}
   #bee-immersive-suite .hp-reflow .hp-metrics strong{font-size:calc(15px * var(--q-scale,1));letter-spacing:-.2px;min-width:0}
@@ -167,6 +167,11 @@
   #bee-immersive-suite .hp-home-swipe{padding-bottom:31px}
   #bee-immersive-suite .hp-home-large .hp-budget-layout{grid-template-columns:minmax(0,1fr) 72px;gap:8px}
   #bee-immersive-suite .hp-home-large .hp-ring-budget{width:72px;height:72px}
+
+  #bee-immersive-suite .hp-reflow .hp-classic-metrics{gap:18px}
+  #bee-immersive-suite .hp-reflow .hp-classic-metrics>div{display:grid;gap:5px;align-items:start;justify-content:stretch}
+  #bee-immersive-suite .hp-reflow .hp-classic-metrics label{font-size:calc(11px * var(--q-scale,1));line-height:1.4;color:var(--bc-muted)}
+  #bee-immersive-suite .hp-reflow .hp-classic-metrics strong{font-size:calc(18px * var(--q-scale,1));line-height:1.35;font-weight:550;white-space:nowrap}
   `;
   function data(e,card){const hidden=e.api.state.hide,over=state.budget==='exceeded';return {hidden,over,expense:hidden?'••••':over?'5,328.50':card.querySelector('.bc-hero-value')?.textContent.replace(/^[¥\s]+/,'')||'3,286.50',income:hidden?'••••':card.querySelector('.bc-dual strong')?.textContent||'12,000.00',balance:hidden?'••••':over?'6,671.50':card.querySelectorAll('.bc-dual strong')[1]?.textContent||'8,713.50',remaining:hidden?'••••':over?'¥328.50':'¥1,713.50',total:hidden?'••••':'¥5,000.00'};}
   function budget(e){const d=e.values;return `<button class="hp-budget" data-hp-budget data-over="${d.over}" aria-label="${state.budget==='unset'?'设置预算':d.over?'查看预算，已超支 '+d.remaining:'查看预算，剩余 '+d.remaining}">${icon('budget')}${state.budget==='unset'?'<strong>设置预算</strong>':`<span class="hp-budget-caption">${d.over?'超支':'剩余'}</span><strong>${d.remaining}</strong>`}${icon('chevron')}</button>`;}
@@ -180,9 +185,9 @@
     const money=(value)=>`<div class="hp-amount bc-num"><span>${d.hidden?'':'¥'}</span><span>${value}</span></div>`;
     const summary=`<section class="hp-switch-panel" role="tabpanel" id="hp-panel-summary" aria-labelledby="hp-tab-summary" data-hp-panel="summary" aria-hidden="false"><div class="hp-panel-heading"><span>本月支出 · CNY</span>${eye}</div>${money(d.expense)}<div class="hp-home-metrics hp-metrics"><div><label>本月收入</label><strong class="bc-num">${d.income}</strong></div><div><label>本月结余</label><strong class="bc-num">${d.balance}</strong></div></div></section>`;
     const budgetPanel=`<section class="hp-switch-panel" role="tabpanel" id="hp-panel-budget" aria-labelledby="hp-tab-budget" data-hp-panel="budget" aria-hidden="true"><div class="hp-budget-layout"><div><div class="hp-panel-heading"><span>本月预算 · CNY</span>${eye}</div>${unset?'<div class="hp-budget-unset">还未设置预算</div>':money(d.total.replace(/^¥/,''))}</div>${ring}</div><div class="hp-budget-footer"><div>${unset?'<span>设置后查看本月预算进度</span>':`<label>已使用</label><strong class="bc-num">${d.hidden?'••••':'¥'+d.expense}</strong>`}</div><button data-hp-budget>${unset?'去设置':'预算管理'} ${icon('chevron')}</button></div></section>`;
-    const single=`<section class="hp-summary hp-reflow hp-ring ${state.scale==='1.4'?'hp-large':''} ${state.viewport.startsWith('320')?'hp-ring-small':''}"><div class="hp-context">${month}<div class="hp-currency">CNY ${eye}</div></div><div class="hp-ring-layout"><div class="hp-main-money"><label>本月支出</label>${money(d.expense)}</div>${ring}</div><div class="hp-metrics"><div><label>收入</label><strong class="bc-num">${d.income}</strong></div><div><label>结余</label><strong class="bc-num">${d.balance}</strong></div></div></section>`;
-    card.outerHTML=e.variant==='single'?single:`<section class="hp-summary hp-home-switch hp-home-${e.variant} ${state.viewport.startsWith('320')?'hp-home-small':''} ${state.scale==='1.4'?'hp-home-large':''}" aria-label="汇总和预算，可左右滑动切换"><div class="hp-context">${month}${e.variant==='quiet'?tabs:'<button class="hp-home-title" data-hp-title data-hp-view="budget" aria-label="切换到预算">汇总 '+icon('chevron')+'</button>'}</div><div class="hp-home-panels">${summary}${budgetPanel}</div>${e.variant==='swipe'?pager:''}</section>`;
-    e.summary=main.querySelector('.hp-summary');if(e.variant!=='single'){selectPanel(e,e.panel||'summary');let start=null;e.summary.addEventListener('pointerdown',event=>{if(event.target.closest('button'))return;start={x:event.clientX,y:event.clientY};e.summary.setPointerCapture(event.pointerId);});e.summary.addEventListener('pointercancel',()=>start=null);e.summary.addEventListener('pointerup',event=>{if(!start)return;const dx=event.clientX-start.x,dy=event.clientY-start.y;start=null;if(Math.abs(dx)>40&&Math.abs(dx)>Math.abs(dy)*1.3)selectPanel(e,dx<0?'budget':'summary');});}
+    const single=`<section class="hp-summary hp-reflow hp-ring ${state.scale==='1.4'?'hp-large':''} ${state.viewport.startsWith('320')?'hp-ring-small':''}"><div class="hp-context">${month}<div class="hp-currency">CNY ${eye}</div></div><div class="hp-ring-layout"><div class="hp-main-money"><label>本月支出</label>${money(d.expense)}</div>${ring}</div><div class="hp-metrics ${e.variant==='classic'?'hp-classic-metrics':''}"><div><label>${e.variant==='classic'?'本月收入':'收入'}</label><strong class="bc-num">${d.income}</strong></div><div><label>${e.variant==='classic'?'本月结余':'结余'}</label><strong class="bc-num">${d.balance}</strong></div></div></section>`;
+    card.outerHTML=['single','classic'].includes(e.variant)?single:`<section class="hp-summary hp-home-switch hp-home-${e.variant} ${state.viewport.startsWith('320')?'hp-home-small':''} ${state.scale==='1.4'?'hp-home-large':''}" aria-label="汇总和预算，可左右滑动切换"><div class="hp-context">${month}${e.variant==='quiet'?tabs:'<button class="hp-home-title" data-hp-title data-hp-view="budget" aria-label="切换到预算">汇总 '+icon('chevron')+'</button>'}</div><div class="hp-home-panels">${summary}${budgetPanel}</div>${e.variant==='swipe'?pager:''}</section>`;
+    e.summary=main.querySelector('.hp-summary');if(!['single','classic'].includes(e.variant)){selectPanel(e,e.panel||'summary');let start=null;e.summary.addEventListener('pointerdown',event=>{if(event.target.closest('button'))return;start={x:event.clientX,y:event.clientY};e.summary.setPointerCapture(event.pointerId);});e.summary.addEventListener('pointercancel',()=>start=null);e.summary.addEventListener('pointerup',event=>{if(!start)return;const dx=event.clientX-start.x,dy=event.clientY-start.y;start=null;if(Math.abs(dx)>40&&Math.abs(dx)>Math.abs(dy)*1.3)selectPanel(e,dx<0?'budget':'summary');});}
     e.summary.insertAdjacentHTML('beforebegin',`<div class="hp-sticky"><div class="hp-sticky-inner"><button class="hp-back-top" data-hp-top aria-label="返回完整汇总"><small>${main.querySelector('.bc-month-button').textContent.trim()}</small><b>支出 ${d.hidden?'':'¥'}${d.expense}</b></button>${budget(e)}</div></div>`);main.addEventListener('scroll',()=>main.querySelector('.hp-sticky')?.classList.toggle('shown',main.scrollTop>e.summary.offsetTop+e.summary.offsetHeight-52),{passive:true});
     e.ready=true;e.win.requestAnimationFrame(()=>{fit(e);document.querySelector(`[data-height=${e.variant}]`).textContent=`顶部卡片约 ${Math.round(e.summary.getBoundingClientRect().height)} px · ${state.scale==='1'?'正常字号':'大字体'}`;});
   }
@@ -193,6 +198,6 @@
   for(const key of ['viewport','appearance','budget','scale']){const select=$('#'+key);if([...select.options].some(o=>o.value===params.get(key))){state[key]=params.get(key);select.value=state[key];}select.onchange=()=>{state[key]=select.value;load();};}
   function select(value){state.selected=value;$('.proposals').dataset.selected=value;for(const button of document.querySelectorAll('[data-select]'))button.setAttribute('aria-pressed',String(button.dataset.select===value));resize();}
   for(const button of document.querySelectorAll('[data-select]'))button.onclick=()=>select(button.dataset.select);
-  if(['single','quiet','swipe'].includes(params.get('selected')))select(params.get('selected'));
+  if([...document.querySelectorAll('[data-select]')].some(button=>button.dataset.select===params.get('selected')))select(params.get('selected'));
   $('#reset').onclick=load;new ResizeObserver(resize).observe($('.proposals'));window.homeSwitchReview={state,frames};load();
 })();

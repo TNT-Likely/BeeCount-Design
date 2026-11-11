@@ -93,7 +93,7 @@
   #bee-immersive-suite .hp-ring-budget[data-over=true] .hp-ring-progress{stroke:var(--bc-red)}
   #bee-immersive-suite .hp-remaining{color:var(--bc-muted);font-size:calc(10px * var(--q-scale,1));line-height:1.5;margin-top:8px}
   #bee-immersive-suite .hp-remaining[data-over=true]{color:var(--bc-red)}
-  #bee-immersive-suite .hp-reflow .hp-metrics{margin-top:15px;padding-top:13px;border-top:1px solid var(--bc-line);gap:20px}
+  #bee-immersive-suite .hp-reflow .hp-metrics{margin-top:15px;padding-top:13px;border-top:1px solid transparent;gap:20px}
   #bee-immersive-suite .hp-reflow .hp-metrics>div{display:flex;align-items:baseline;justify-content:space-between;gap:5px}
   #bee-immersive-suite .hp-reflow .hp-metrics label{font-size:10px;white-space:nowrap}
   #bee-immersive-suite .hp-reflow .hp-metrics strong{font-size:calc(15px * var(--q-scale,1));letter-spacing:-.2px;min-width:0}
