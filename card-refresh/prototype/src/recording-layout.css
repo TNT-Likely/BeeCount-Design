@@ -142,3 +142,7 @@
 #bee-immersive-suite .bc-phone .z-note-history svg{width:16px;height:16px}
 #bee-immersive-suite .bc-phone .z-history-choices{display:flex;flex-wrap:wrap;gap:8px}
 #bee-immersive-suite .bc-phone .z-history-choices button{padding:8px 12px!important;border-radius:12px}
+
+/* Keep the header separate from the amount in light and dark themes. */
+#bee-immersive-suite .bc-phone[data-z-editor=true] .p-editor-head{margin-bottom:12px}
+#bee-immersive-suite .bc-phone[data-z-editor=true][data-q-compact=true] .p-editor-head{margin-bottom:8px}

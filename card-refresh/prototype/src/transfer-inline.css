@@ -4,3 +4,7 @@
 #bee-immersive-suite .bc-phone .ti93-reference-row .ti93-tags{flex:1;min-width:0;max-width:none;justify-content:flex-end}
 #bee-immersive-suite .bc-phone .ti93-account-empty{display:flex;flex-direction:row;align-items:center;gap:10px;padding:10px 12px;min-height:64px;color:var(--bc-muted)}#bee-immersive-suite .bc-phone .ti93-account-empty>svg{width:24px!important;height:24px!important;flex:none}#bee-immersive-suite .bc-phone .ti93-account-empty>b{flex:1;min-width:0;font-size:14px;font-weight:500;color:var(--bc-ink);overflow-wrap:anywhere}#bee-immersive-suite .bc-phone .ti93-account-empty .ti93-add-account{flex:none;min-height:44px;padding:10px 16px;border-radius:12px;background:var(--bc-soft);font-size:11px}
 #bee-immersive-suite .bc-phone .ti93-pair .ti93-pair-add{min-height:44px;padding:10px 16px;margin:0 12px 12px;border-radius:12px;background:var(--bc-soft);font-size:13px}
+
+/* Same header spacing contract as income / expense recording. */
+#bee-immersive-suite .bc-phone[data-ti93-editor=true] .ti93-header{margin-bottom:12px}
+#bee-immersive-suite .bc-phone[data-ti93-editor=true][data-ti93-compact=true] .ti93-header{margin-bottom:8px}
