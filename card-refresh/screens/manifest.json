@@ -104,7 +104,7 @@
     "title": "我的 · 完整菜单",
     "group": "主要页面",
     "slug": "mine",
-    "fullHeight": 845,
+    "fullHeight": 1549,
     "viewport": "screens/viewport/mine.png",
     "full": "screens/full/mine.png",
     "svg": "figma/mine.svg"
