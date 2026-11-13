@@ -6,5 +6,5 @@
 #bee-immersive-suite .bc-phone .ti93-pair .ti93-pair-add{min-height:44px;padding:10px 16px;margin:0 12px 12px;border-radius:12px;background:var(--bc-soft);font-size:13px}
 
 /* Same header spacing contract as income / expense recording. */
-#bee-immersive-suite .bc-phone[data-ti93-editor=true] .ti93-header{margin-bottom:12px}
+#bee-immersive-suite .bc-phone[data-ti93-editor=true] .ti93-header{align-items:flex-end;margin-bottom:8px}
 #bee-immersive-suite .bc-phone[data-ti93-editor=true][data-ti93-compact=true] .ti93-header{margin-bottom:8px}

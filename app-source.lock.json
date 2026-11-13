@@ -1,9 +1,9 @@
 {
   "version": 1,
   "repository": "https://github.com/TNT-Likely/BeeCount",
-  "appBaselineCommit": "e0c6f13f109e519a7aa3727f437f3081899dfd96",
-  "workingTreeInputs": true,
-  "note": "Input hashes are the reviewed migration working-tree snapshot; the App lock itself is not an input.",
+  "appBaselineCommit": "ef34c174c864cc4332b198e744c6b22bda4c383e",
+  "workingTreeInputs": false,
+  "note": "Reviewed source inputs match the committed App baseline; the App design lock is not an input.",
   "inputs": {
     "assets/bee.svg": "aab1c14698f7d4e716fb979a19b30f908dfb7dfe37817c1f5f55464c19dfeaed",
     "assets/icons/alipay.svg": "efe7d616daa2772d918b9ba2286e0430e4725ff47609df1d5d5337b52589ccf2",
@@ -29,9 +29,17 @@
     "lib/ai/core/prompt_builder.dart": "b69ce67118d421ae347647740d802eec64eb620783dbe7342d0a31390b5e3b13",
     "lib/dev/component_gallery/business_page.dart": "d7c6366b98e7d27e539b01599f97458ffab6510d749f222d2cf8b5a2fda2d99b",
     "lib/dev/component_gallery/foundation_page.dart": "86b88ee3998ade13d0821de05372eff7432a7801cc5ec4ce1d2117838929b3ee",
-    "lib/l10n/app_zh.arb": "e15dff08e3ca94039ad3bb5f7038e30451b601f8a06f302aca351dfe1f3aa745",
+    "lib/l10n/app_zh.arb": "091cd35d0406b1681457967fe3175d440de43cf442603c0efdc84bb864b911cd",
     "lib/pages/automation/ios/bindings/ios_auto_billing_actions.dart": "0847d3866042901fe4e4d5ee5ef78fc4e9cd91524ec3d0777e78662c6b8f94a7",
     "lib/pages/settings/appearance/bindings/theme_color_options.dart": "d2cbee5030da65874dd266e0c973597d11b95fc9d94e5b82a5d26a06125e5b03",
-    "lib/utils/currencies.dart": "8c4562576f8fef05f007a6a22e06e216dd038c252b7123296b8c34e25e0fcc8d"
+    "lib/pages/shared/feedback/recording_progress_dialog.dart": "517deab378aa62c7824869dbbbe98fbba6520e88840bf50ab8dbde2ad1be0b1b",
+    "lib/styles/header_skins.dart": "1a8c90eb694fc47557ce3f36fc2c331b0836d1d50be6a04ae2ad63f680d8035a",
+    "lib/styles/header_skins/aurora_skin.dart": "0547c7751a8fd4bbeb70d5681b1dbff579fc0270c0d6789c1170442d599f8d0b",
+    "lib/styles/header_skins/page_composition.dart": "6c0b71b27ee2ddbc9259e9ac34eccd7468a42bf5b0d86dc62a59c087a2d29ce2",
+    "lib/utils/currencies.dart": "8c4562576f8fef05f007a6a22e06e216dd038c252b7123296b8c34e25e0fcc8d",
+    "packages/beecount_business_ui/lib/src/recording/recording_components.dart": "afef276c9bd3eff04a8b1380a561432987a8b591191d95ad92ab3de393f183be",
+    "packages/beecount_business_ui/lib/src/recording/recording_frame.dart": "7404541bebfb378c0a4ce1a7a7714580d106148e8e00135ca329bd194943d539",
+    "packages/beecount_business_ui/lib/src/recording/recording_progress.dart": "d37f29d19b6d3ac360bb5effe5f94a29022b30c5ad636dafbc99b5a7e820d570",
+    "packages/beecount_business_ui/lib/src/transactions/calendar_components.dart": "313c70c2645bdefac642041eeb73c6f644c49e008199c7dd4f58a315f93f48ce"
   }
 }

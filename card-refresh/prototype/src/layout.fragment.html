@@ -1653,7 +1653,7 @@
   function gOriginalCategoryGrid(){
     const list=state.recordType==='income'?incomes:pAllCategories.slice(0,7).concat([['更多分类','grid-2x2']]);let html='';
     for(let start=0;start<list.length;start+=4){const row=list.slice(start,start+4);html+=`<div class="p-category-row">${row.map(([n,i])=>{const extra=n==='更多分类'&&!pAllCategories.slice(0,7).some(([name])=>name===state.category);return btn(n==='更多分类'?'p-morecategories':`p-parent:${n}`,`<span class="bc-entry-icon">${icon(i)}${pCategoryTree[n]||extra?'<span class="p-cat-chevron"></span>':''}</span><span>${n}</span>${extra?`<small class="w-more-selected">${esc(state.category)}</small>`:''}`,n,'p-category',`aria-pressed="${state.category===n||extra}" ${pCategoryTree[n]?`aria-expanded="${state.expandedCategory===n}"`:''}`);}).join('')}</div>`;
-      if(row.some(([n])=>n===state.expandedCategory)&&pCategoryTree[state.expandedCategory])html+=`<div class="p-subcategories" aria-label="${state.expandedCategory}二级分类">${btn(`p-sub:${state.expandedCategory}:`,state.expandedCategory,'选择'+state.expandedCategory,'',`aria-pressed="${!state.subcategory}"`)}${pCategoryTree[state.expandedCategory].map(n=>btn(`p-sub:${state.expandedCategory}:${n}`,n,'选择'+n,'',`aria-pressed="${state.subcategory===n}"`)).join('')}</div>`;
+      if(row.some(([n])=>n===state.expandedCategory)&&pCategoryTree[state.expandedCategory])html+=`<div class="p-subcategories" aria-label="${state.expandedCategory}二级分类">${pCategoryTree[state.expandedCategory].map(n=>btn(`p-sub:${state.expandedCategory}:${n}`,n,'选择'+n,'',`aria-pressed="${state.subcategory===n}"`)).join('')}</div>`;
     }return html;
   }
   function fOriginalEditor(){
@@ -1730,11 +1730,11 @@
     if(action==='search'){navigate('search');}
     else if(action==='edit-record'||action==='copy-record'){const row=pRows().find(r=>r.id===state.detailId)||pRows()[0];if(row){state.vEditId=action==='edit-record'?row.id:null;state.fRecordCurrency=vCode(row);state.fRecordRate=String(Number(row.rate)>0?Number(row.rate):Number((vNative(row)/row.amount).toPrecision(12)));state.recordTags=row.tags?.length?[...row.tags]:row.tag?[row.tag]:[];state.amount=String(row.amount);state.expression=String(row.amount);state.calcFresh=true;state.lastCalculation='';state.note=row.note??row.title;state.category=row.parentCategory||pParent(row.category);state.subcategory=row.subcategory||(state.category!==row.category?row.category:'');state.expandedCategory=state.subcategory?state.category:'';state.recordAccount=row.account;state.tag=row.tag||'';state.recordType=row.type||'expense';navigate('editor');}}
     else if(action==='p-type'){state.recordType=arg;state.category=arg==='income'?'工资':arg==='transfer'?'转账':'餐饮';state.subcategory='';state.expandedCategory='';render();}
-    else if(action==='p-parent'){state.category=arg;state.subcategory='';state.expandedCategory=pCategoryTree[arg]?(state.expandedCategory===arg?'':arg):'';render();}
-    else if(action==='p-sub'){state.category=parts[0];state.subcategory=parts[1]||'';render();}
+    else if(action==='p-parent'){if(pCategoryTree[arg])state.expandedCategory=state.expandedCategory===arg?'':arg;else{state.category=arg;state.subcategory='';state.expandedCategory='';}render();}
+    else if(action==='p-sub'){if(!pCategoryTree[parts[0]]?.includes(parts[1]))return;state.category=parts[0];state.subcategory=parts[1];render();}
     else if(action==='p-morecategories')pShowMoreCategories();
-    else if(action==='p-moreparent'){state.category=arg;state.subcategory='';state.expandedCategory='';closeSheet();if(pCategoryTree[arg])sheet(arg+' · 二级分类',`<div class="p-chips">${btn(`p-moresub:${arg}:`,arg,'选择'+arg,'p-chip')}${pCategoryTree[arg].map(n=>btn(`p-moresub:${arg}:${n}`,n,'选择'+n,'p-chip')).join('')}</div>`);else render();}
-    else if(action==='p-moresub'){state.category=parts[0];state.subcategory=parts[1]||'';state.expandedCategory='';closeSheet();render();}
+    else if(action==='p-moreparent'){closeSheet();if(pCategoryTree[arg])sheet(arg+' · 二级分类',`<div class="p-chips">${pCategoryTree[arg].map(n=>btn(`p-moresub:${arg}:${n}`,n,'选择'+n,'p-chip')).join('')}</div>`);else{state.category=arg;state.subcategory='';state.expandedCategory='';render();}}
+    else if(action==='p-moresub'){if(!pCategoryTree[parts[0]]?.includes(parts[1]))return;state.category=parts[0];state.subcategory=parts[1];state.expandedCategory='';closeSheet();render();}
     else if(action==='p-key')pHandleKey(arg);
     else if(action==='p-save'){const result=pCalcState();if(!result.valid||result.value<=0){phone.querySelector('[data-error]').textContent=result.message||'请输入大于0的金额';return;}state.amount=result.value.toFixed(2);saveRecord(arg==='again');if(arg==='again'){state.expression='0';state.calcFresh=true;state.lastCalculation='';render();}}
     else if(action==='p-note')pOpenNote();
