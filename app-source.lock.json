@@ -1,7 +1,7 @@
 {
   "version": 1,
   "repository": "https://github.com/TNT-Likely/BeeCount",
-  "appBaselineCommit": "0bbc79c86e278ccb6a07c8baa2e4fc2f842956a3",
+  "appBaselineCommit": "e0c6f13f109e519a7aa3727f437f3081899dfd96",
   "workingTreeInputs": true,
   "note": "Input hashes are the reviewed migration working-tree snapshot; the App lock itself is not an input.",
   "inputs": {
@@ -27,9 +27,9 @@
     "assets/v4_gallery/transaction-states.json": "5fceb97395224d10dafe74f05fa3ab98bcc5065b84a182ca3f9978d80be758ba",
     "lib/agent/runtime/agent_execution_settings.dart": "d09510c61375fe2e347a3184d73f5f0177749cc7f7a44c6a453c470c6b485fee",
     "lib/ai/core/prompt_builder.dart": "b69ce67118d421ae347647740d802eec64eb620783dbe7342d0a31390b5e3b13",
-    "lib/dev/component_gallery/business_page.dart": "46ec37d8e443a237bf7f917df3b6e9df2290d669abcbfb0548b6ccfe8bb77dbb",
-    "lib/dev/component_gallery/foundation_page.dart": "9654e2ff66c1f39bd65dd64a98e8f844a87c4a7ddd583b9b92b4c5f2a442c34b",
-    "lib/l10n/app_zh.arb": "a60f2071b610a77d24bd70a7a995b3479f96205772f7d95f3e080739ef1b2db1",
+    "lib/dev/component_gallery/business_page.dart": "d7c6366b98e7d27e539b01599f97458ffab6510d749f222d2cf8b5a2fda2d99b",
+    "lib/dev/component_gallery/foundation_page.dart": "86b88ee3998ade13d0821de05372eff7432a7801cc5ec4ce1d2117838929b3ee",
+    "lib/l10n/app_zh.arb": "e15dff08e3ca94039ad3bb5f7038e30451b601f8a06f302aca351dfe1f3aa745",
     "lib/pages/automation/ios/bindings/ios_auto_billing_actions.dart": "0847d3866042901fe4e4d5ee5ef78fc4e9cd91524ec3d0777e78662c6b8f94a7",
     "lib/pages/settings/appearance/bindings/theme_color_options.dart": "d2cbee5030da65874dd266e0c973597d11b95fc9d94e5b82a5d26a06125e5b03",
     "lib/utils/currencies.dart": "8c4562576f8fef05f007a6a22e06e216dd038c252b7123296b8c34e25e0fcc8d"
