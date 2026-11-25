@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="{{locale}}">
+<head>
+  <meta charset="utf-8">
+  <title>BeeCount</title>
+  <style>
+    @font-face {
+      font-family: StoreTitle;
+      src: url("{{font}}") format("truetype");
+      font-weight: 800;
+      font-display: block;
+    }
+    * { box-sizing: border-box; }
+    html, body { width: 960px; height: 640px; padding: 0; margin: 0; overflow: hidden; }
+    .poster { position: relative; width: 960px; height: 640px; overflow: hidden; background: #ffb917; }
+    .background { display: block; position: absolute; width: 100%; height: 100%; inset: 0; }
+    .focus {
+      position: absolute; left: 227px; top: 320px; width: 506px;
+      transform: translateY(-50%); display: flex; flex-direction: column; align-items: stretch; gap: 24px;
+    }
+    h1 {
+      margin: 0; text-align: center; white-space: nowrap; color: #251a11;
+      font-family: StoreTitle, sans-serif; font-weight: 800; font-kerning: normal;
+      font-size: 66px; line-height: 1.2; letter-spacing: -2.5px;
+    }
+    html[lang="en-US"] h1 { font-size: 74px; line-height: 1.03; letter-spacing: -1.6px; }
+    .ticket {
+      overflow: hidden; background: white; border-radius: 24px; transform: rotate(-2deg);
+      box-shadow: 0 1.8px 0 #dfd3af, 0 3.7px 0 #d9b367, 3px 8px 7px rgba(83,45,8,.19), 10px 16px 20px -3px rgba(106,59,8,.25);
+    }
+    .ticket img { display: block; width: 100%; height: auto; }
+  </style>
+</head>
+<body>
+  <main class="poster">
+    <img class="background" src="{{background}}" alt="">
+    <div class="focus">
+      <h1></h1>
+      <div class="ticket"><img src="{{row}}" alt=""></div>
+    </div>
+  </main>
+</body>
+</html>
