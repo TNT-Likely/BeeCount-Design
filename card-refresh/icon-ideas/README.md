@@ -15,26 +15,26 @@
     </tr>
     <tr id="pocket-bookkeeper">
       <td>
-        <a href="pocket-bookkeeper/pocket-bookkeeper-v2.png"><img src="pocket-bookkeeper/pocket-bookkeeper-v2.png" width="96" height="96" alt="优化后的小蜂捧着摊开的账本，红铅笔落在 6.50 旁边"></a>
+        <a href="pocket-bookkeeper/pocket-bookkeeper-v2.png"><img src="pocket-bookkeeper/pocket-bookkeeper-v2.png" width="96" height="96" alt="圆脸腮红的卡通小蜜蜂捧着摊开的账本，红铅笔落在 6.50 旁边"></a>
         <img src="pocket-bookkeeper/pocket-bookkeeper-v2.png" width="24" height="24" alt="">
       </td>
-      <td><strong>小账房</strong><br>小蜂一只手托着账页，另一只手刚用红铅笔记下 6.50；第二版重绘了更圆润可爱的蜜蜂本体。<br><small>2026-11-25 · 保留备选</small></td>
-      <td><a href="pocket-bookkeeper/pocket-bookkeeper-v2.svg">优化版 SVG</a> · <a href="pocket-bookkeeper/pocket-bookkeeper-v2.png">优化版 PNG</a> · <a href="pocket-bookkeeper/pocket-bookkeeper.png">初版记账稿</a> · <a href="pocket-bookkeeper/reading-study.png">看账初稿</a> · <a href="pocket-bookkeeper/prompt.txt">生成提示词</a></td>
+      <td><strong>小账房</strong><br>卡通萌版小蜂一只手托着账页，另一只手刚用红铅笔记下 6.50；保留初版作对比。<br><small>2026-11-25 · 保留备选</small></td>
+      <td><a href="pocket-bookkeeper/pocket-bookkeeper-v2.svg">卡通版 SVG</a> · <a href="pocket-bookkeeper/pocket-bookkeeper-v2.png">卡通版 PNG</a> · <a href="pocket-bookkeeper/pocket-bookkeeper.png">初版记账稿</a> · <a href="pocket-bookkeeper/reading-study.png">看账初稿</a> · <a href="pocket-bookkeeper/prompt.txt">生成提示词</a></td>
     </tr>
     <tr id="honey-jar">
       <td>
-        <a href="honey-jar/honey-jar.png"><img src="honey-jar/honey-jar.png" width="96" height="96" alt="燕麦底上一只圆润小蜜蜂伏在半满金黄蜂蜜的陶罐口，罐颈垂着朱红小签"></a>
+        <a href="honey-jar/honey-jar.png"><img src="honey-jar/honey-jar.png" width="96" height="96" alt="燕麦底上一只圆脸腮红的卡通小蜜蜂双手扶在半满蜂蜜的陶罐口，罐颈挂着朱红小签"></a>
         <img src="honey-jar/honey-jar.png" width="24" height="24" alt="">
       </td>
-      <td><strong>蜜罐守账</strong><br>半满蜂蜜的奶白陶罐充当攒钱水位，圆润小蜂伏在罐口守账，颈间挂着一枚朱红账签。<br><small>2026-11-25 · 探索稿</small></td>
+      <td><strong>蜜罐守账</strong><br>半满蜂蜜的奶白陶罐充当攒钱水位，卡通小蜂双手扶在罐口探头守账，颈间挂着朱红账签。<br><small>2026-11-25 · 探索稿</small></td>
       <td><a href="honey-jar/honey-jar.svg">可编辑 SVG</a> · <a href="honey-jar/honey-jar.png">1024 px PNG</a></td>
     </tr>
     <tr id="daily-tally">
       <td>
-        <a href="daily-tally/daily-tally.png"><img src="daily-tally/daily-tally.png" width="96" height="96" alt="深墨青底上一张米白记账便签卡，顶端两枚朱红装订扣，右上角停着一只圆润金黄小蜂"></a>
+        <a href="daily-tally/daily-tally.png"><img src="daily-tally/daily-tally.png" width="96" height="96" alt="深墨青底上一张米白记账便签卡，顶端两枚朱红装订扣，右上角停着一只圆脸腮红的卡通小蜜蜂"></a>
         <img src="daily-tally/daily-tally.png" width="24" height="24" alt="">
       </td>
-      <td><strong>每日一笔</strong><br>深墨青底衬出带双红扣的日常账卡，一只圆润小蜂轻落在右上角，像刚盖下今日印记。<br><small>2026-11-25 · 探索稿</small></td>
+      <td><strong>每日一笔</strong><br>深墨青底衬出带双红扣的日常账卡，一只圆脸卡通小蜂轻落在右上角，像刚盖下今日印记。<br><small>2026-11-25 · 探索稿</small></td>
       <td><a href="daily-tally/daily-tally.svg">可编辑 SVG</a> · <a href="daily-tally/daily-tally.png">1024 px PNG</a></td>
     </tr>
     <tr id="wax-seal">
@@ -55,10 +55,10 @@
     </tr>
     <tr id="folded-page">
       <td>
-        <a href="folded-page/folded-page.png"><img src="folded-page/folded-page.png" width="96" height="96" alt="蜜黄底上一张右下角折起的米白账页，右上角停着一只圆滚滚的小蜜蜂"></a>
+        <a href="folded-page/folded-page.png"><img src="folded-page/folded-page.png" width="96" height="96" alt="蜜黄底上一张右下角折起的米白账页，右上角停着一只圆脸腮红的卡通小蜜蜂"></a>
         <img src="folded-page/folded-page.png" width="24" height="24" alt="">
       </td>
-      <td><strong>折角账页</strong><br>右下角折起的暖白账页与留白处停驻的小蜂，走极简文具纸感路线。<br><small>2026-11-25 · 探索稿</small></td>
+      <td><strong>折角账页</strong><br>右下角折起的暖白账页与留白处停驻的卡通小蜂，兼顾文具纸感与萌趣。<br><small>2026-11-25 · 探索稿</small></td>
       <td><a href="folded-page/folded-page.svg">可编辑 SVG</a> · <a href="folded-page/folded-page.png">1024 px PNG</a></td>
     </tr>
     <tr id="hex-vault">

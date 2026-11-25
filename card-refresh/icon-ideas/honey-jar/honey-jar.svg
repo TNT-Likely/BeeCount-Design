@@ -1,77 +1,95 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
-  <title id="title">蜜蜂记账 · 蜜罐守账</title>
-  <desc id="description">暖燕麦色底上，一只圆润可爱的小蜜蜂趴在半满金黄蜂蜜的陶罐口往下看，罐右侧垂着朱红小签。</desc>
-  <rect id="background" width="256" height="256" fill="#EBD3AE"/>
+  <title id="title">蜜蜂记账 · 蜜罐守账（卡通萌版）</title>
+  <desc id="description">暖燕麦底上，一只圆脸腮红的卡通小蜜蜂双手扶在半满蜂蜜的奶白陶罐口往下看，罐旁挂着朱红小签。</desc>
+  <rect id="background" width="256" height="256" fill="#F0DAB7"/>
 
-  <defs>
-    <path id="pot-body" d="
-      M 86 116
-      H 170
-      C 192 129 203 151 201 176
-      C 199 202 178 219 152 222
-      H 104
-      C 78 219 57 202 55 176
-      C 53 151 64 129 86 116 Z"/>
-    <clipPath id="pot-clip">
-      <use href="#pot-body"/>
-    </clipPath>
-  </defs>
+  <!-- Cute puffy wings behind the perched cartoon bee -->
+  <g id="wings">
+    <path d="M 96 86 C 58 88 38 68 48 48 C 58 28 90 42 104 76 Z" fill="#FFFFFF" stroke="#3B2316" stroke-width="4.5" stroke-linejoin="round"/>
+    <path d="M 160 86 C 198 88 218 68 208 48 C 198 28 166 42 152 76 Z" fill="#FFFFFF" stroke="#3B2316" stroke-width="4.5" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Plump striped bee back peeking behind pot rim -->
+  <g id="bee-body">
+    <ellipse cx="128" cy="100" rx="38" ry="26" fill="#FFC928" stroke="#3B2316" stroke-width="5"/>
+    <path d="M 95 98 Q 128 110 161 98" fill="none" stroke="#3B2316" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <!-- Cute mochi-cheeked cartoon bee head peeking above the rim -->
+  <g id="bee-head">
+    <!-- Bouncy short antennae -->
+    <path d="M 110 46 C 105 33 95 28 88 33" fill="none" stroke="#3B2316" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="87" cy="34" r="5" fill="#3B2316"/>
+    <path d="M 146 46 C 151 33 161 28 168 33" fill="none" stroke="#3B2316" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="169" cy="34" r="5" fill="#3B2316"/>
+
+    <defs>
+      <path id="hj-head" d="
+        M 128 41
+        C 152 41 168 53 173 72
+        C 177 89 169 104 152 109
+        C 140 112 116 112 104 109
+        C 87 104 79 89 83 72
+        C 88 53 104 41 128 41 Z"/>
+      <clipPath id="hj-head-clip"><use href="#hj-head"/></clipPath>
+    </defs>
+
+    <use href="#hj-head" fill="#FFC928"/>
+    <g clip-path="url(#hj-head-clip)">
+      <ellipse cx="128" cy="110" rx="48" ry="14" fill="#F29F05" opacity="0.55"/>
+      <ellipse cx="120" cy="57" rx="22" ry="9" fill="#FFE47A" opacity="0.75"/>
+    </g>
+    <use href="#hj-head" fill="none" stroke="#3B2316" stroke-width="4.8"/>
+
+    <!-- Happy sparkling eyes glancing down into the honey pot -->
+    <circle cx="107" cy="81" r="6.8" fill="#3B2316"/>
+    <circle cx="105" cy="79" r="2.5" fill="#FFFFFF"/>
+    <circle cx="149" cy="81" r="6.8" fill="#3B2316"/>
+    <circle cx="147" cy="79" r="2.5" fill="#FFFFFF"/>
+
+    <!-- Rosy cheeks & tiny happy mouth -->
+    <ellipse cx="94" cy="90" rx="7" ry="4.2" fill="#FF8468" opacity="0.8"/>
+    <ellipse cx="162" cy="90" rx="7" ry="4.2" fill="#FF8468" opacity="0.8"/>
+    <path d="M 122 88 Q 125 92 128 89 Q 131 92 134 88" fill="none" stroke="#3B2316" stroke-width="3.2" stroke-linecap="round"/>
+  </g>
 
   <!-- Honey pot -->
   <g id="honey-pot">
-    <use href="#pot-body" fill="#FFF8EB"/>
+    <defs>
+      <path id="pot-body" d="
+        M 84 118
+        H 172
+        C 194 131 205 153 203 178
+        C 201 204 180 221 152 224
+        H 104
+        C 76 221 55 204 53 178
+        C 51 153 62 131 84 118 Z"/>
+      <clipPath id="pot-clip">
+        <use href="#pot-body"/>
+      </clipPath>
+    </defs>
+
+    <use href="#pot-body" fill="#FFFDF7"/>
     <g clip-path="url(#pot-clip)">
-      <path d="M 48 157 Q 88 150 128 157 T 208 157 L 208 230 L 48 230 Z" fill="#F6A600"/>
-      <rect x="48" y="215" width="160" height="14" fill="#13323B"/>
+      <!-- Golden honey fill -->
+      <path d="M 46 160 Q 87 152 128 160 T 210 160 L 210 232 L 46 232 Z" fill="#F9A800"/>
+      <!-- Soft cream shine on pot shoulder -->
+      <path d="M 75 174 C 71 184 72 195 79 204" fill="none" stroke="#FFE47A" stroke-width="6" stroke-linecap="round"/>
     </g>
-    <rect x="78" y="104" width="100" height="16" rx="8" fill="#13323B"/>
-    <path d="M 164 118 L 171 131" stroke="#13323B" stroke-width="3.5" stroke-linecap="round"/>
-    <path d="M 164 128 L 184 127 L 188 155 L 168 158 L 161 133 Z" fill="#EC5331"/>
-    <circle cx="171" cy="134" r="2.3" fill="#FFF8EB"/>
+    <use href="#pot-body" fill="none" stroke="#3B2316" stroke-width="5" stroke-linejoin="round"/>
+
+    <!-- Pot collar rim -->
+    <rect x="75" y="106" width="106" height="17" rx="8.5" fill="#2A3E47" stroke="#3B2316" stroke-width="4.5"/>
+
+    <!-- Vermilion ledger tag -->
+    <path d="M 164 122 L 171 134" stroke="#3B2316" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M 164 131 L 184 130 L 188 158 L 168 161 L 161 136 Z" fill="#EE5533" stroke="#3B2316" stroke-width="3.2" stroke-linejoin="round"/>
+    <circle cx="171" cy="137" r="2.5" fill="#FFFDF7"/>
   </g>
 
-  <!-- Chubby, adorable pollen-bee-style bumblebee perched on the pot rim -->
-  <g id="bee" transform="translate(117 77) rotate(12)">
-    <!-- Far paddle wing behind -->
-    <path d="M -18 -14 C -36 -22 -48 -14 -45 -2 C -42 10 -24 14 -10 8 Z" fill="#13323B"/>
-
-    <!-- Single cute curved antenna -->
-    <path d="M 21 -14 C 24 -24 32 -29 39 -26 C 42 -24 42 -20 39 -19 C 33 -18 29 -13 28 -7 Z" fill="#13323B"/>
-
-    <!-- Unified plump organic bee body with clean smooth rear curve -->
-    <path d="
-      M -24 -4
-      C -33 6 -36 18 -31 27
-      C -23 39 7 41 24 27
-      C 36 17 42 2 39 -9
-      C 36 -20 24 -26 12 -23
-      C -2 -20 -16 -13 -24 -4 Z" fill="#13323B"/>
-
-    <!-- One generous warm golden honey band curving with the body -->
-    <path d="
-      M -12 -13
-      C -4 -17 4 -19 10 -19
-      C 4 -7 3 8 8 20
-      C 12 27 17 31 20 31
-      C 12 37 2 39 -8 37
-      C -18 30 -22 18 -20 4
-      C -19 -3 -16 -9 -12 -13 Z" fill="#F6A600"/>
-
-    <!-- Plump framed near wing -->
-    <path d="
-      M 11 -14
-      C 15 -18 13 -26 5 -35
-      C -6 -46 -22 -49 -31 -41
-      C -39 -34 -37 -20 -28 -12
-      C -18 -3 -1 0 11 -14 Z" fill="#13323B"/>
-    <path d="
-      M 8 -16
-      C 11 -19 8 -25 2 -31
-      C -7 -40 -20 -42 -26 -37
-      C -32 -31 -30 -21 -23 -15
-      C -15 -8 -1 -7 8 -16 Z" fill="#FFF8EB"/>
-
-    <!-- Friendly bright eye peeking down at the honey -->
-    <circle cx="28" cy="-4" r="3.8" fill="#FFF8EB"/>
+  <!-- Two cute little golden paws resting happily on the pot rim -->
+  <g id="paws">
+    <ellipse cx="98" cy="110" rx="10" ry="7.5" fill="#FFC928" stroke="#3B2316" stroke-width="4.2"/>
+    <ellipse cx="158" cy="110" rx="10" ry="7.5" fill="#FFC928" stroke="#3B2316" stroke-width="4.2"/>
   </g>
 </svg>
