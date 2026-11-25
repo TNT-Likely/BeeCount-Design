@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024"
+     viewBox="0 0 1254 1254" role="img" aria-labelledby="title description">
+  <title id="title">蜜蜂记账 · 采粉蜂</title>
+  <desc id="description">奶油黄色底上一只侧身的小蜂，两片翅膀朝后，前足抱着一粒橙红色花粉。</desc>
+  <metadata id="concept-prompt"><![CDATA[
+    Initial concept sketch generated with built-in ImageGen. Vector artwork redrawn for small sizes.
+    Create one original, finished app icon design for BeeCount, a welcoming independent personal ledger. Square 1:1 canvas, flat pale warm butter paper background (#FFF0BB), edge to edge to all four corners. Only the symbol. No text, border or drawn app icon tile. Art-direct this like an exceptionally good little character mark printed on the cover of a pocket diary: bold, spontaneous, with presence, at home on an adult's phone. Draw a tiny heavy bumblebee in SIDE PROFILE floating up toward the right, clutching ONE round orange pollen pellet close under its chin, almost like carrying the daily find home. The pellet is a plain small vermilion disk, about a quarter of the width of the bee. Give it an expressive and extraordinarily simple silhouette: plump rounded ink-black rear with a little blunt tail at the lower left, one melted dark round forehead at right, ONE yolk-yellow thick curved band cut through the abdomen. Two large overlapping blunt teardrop wings lean back to the upper left: nearest wing solid warm ivory with clean thick dark outer edge, second a lower ink paddle peeking from behind it. One precise, friendly ivory dot for its eye looking toward the right. Use a single curved black mitten-like foreleg wrapping the pellet, like a little parenthesis. Make the black body one connected, beautifully cut organic mass. A little asymmetry and spring, there is a lot of taste in the few curves. The face has no mouth. Excellent optical balance, simple enough to recognize at 24 px. Center the whole bee including wings and pollen optically with 18 percent margins; no immense empty areas. Hard-edge flat vector style, assured hand-shaped curves, carefully poised proportions, 1950s cut-paper wit with a contemporary independent-app finish. Colors only warm charcoal (#29231F), butter, warm ivory, honey, and the ONE spot of vermilion orange (#EE5834). No gradients, external outlines around everything, fur, hair, paper texture, distressed print, three-dimensionality, glow, drop shadow, legs poking out, long antennae, flight trails, typography, books, coins, currency symbols, letters, shopping bags, or explanatory doodles. Avoid a stock cartoon bee or shiny emoji. Look for an immediately lovable silhouette a person can redraw after one glance.
+  ]]></metadata>
+  <rect id="background" width="1254" height="1254" fill="#FFECAF"/>
+  <g id="bee" transform="translate(58 28) scale(.954)" fill="#2D2521">
+    <path id="far-wing" d="
+      M 326 360
+      C 224 346 138 392 138 470
+      C 138 564 251 629 376 623
+      C 452 619 504 594 526 552
+      C 504 478 413 372 326 360 Z"/>
+    <path id="feeler" d="
+      M 863 482
+      C 859 437 882 391 926 370
+      C 944 361 957 364 962 377
+      C 967 389 960 398 946 403
+      C 914 414 898 440 898 470 Z"/>
+    <path id="body" d="
+      M 420 616
+      C 330 695 254 831 280 934
+      C 262 955 238 979 237 1002
+      C 235 1037 264 1038 324 1013
+      C 411 1110 557 1131 690 1061
+      C 744 1033 793 988 830 943
+      C 846 938 868 922 878 902
+      L 807 808
+      C 848 839 893 846 940 824
+      C 1022 787 1064 705 1055 619
+      C 1047 530 986 466 912 455
+      C 859 447 827 451 781 464
+      C 686 429 526 483 420 616 Z"/>
+    <path id="honey-band" fill="#F6B923" d="
+      M 539 586
+      C 587 586 634 591 675 598
+      C 627 667 602 744 618 816
+      C 634 889 688 955 780 1001
+      C 752 1026 721 1046 690 1061
+      C 573 1040 490 952 460 837
+      C 438 746 465 660 539 586 Z"/>
+    <path id="near-wing" d="
+      M 777 588
+      C 795 578 796 551 784 511
+      C 754 394 684 274 577 198
+      C 476 126 370 153 309 211
+      C 248 269 261 362 306 432
+      C 370 531 531 584 720 601
+      C 745 604 765 600 777 588 Z"/>
+    <path id="wing-inset" fill="#FFF5D9" d="
+      M 754 585
+      C 770 585 776 574 768 546
+      C 736 431 656 312 548 246
+      C 479 204 407 198 361 225
+      C 316 251 304 301 326 353
+      C 371 460 507 534 677 575
+      C 708 582 735 586 754 585 Z"/>
+    <circle id="eye" cx="951" cy="616" r="30" fill="#FFF5D9"/>
+    <circle id="pollen" cx="945" cy="863" r="99" fill="#EB6132"/>
+    <path id="foreleg" d="
+      M 797 784
+      C 808 829 839 862 879 865
+      C 897 866 909 857 922 859
+      C 940 861 947 878 939 900
+      C 930 929 902 951 871 952
+      C 827 954 787 935 760 908 Z"/>
+  </g>
+</svg>

@@ -1,0 +1,27 @@
+:root {
+  color-scheme: light dark;
+  --ink: #302a25;
+  --paper: #fffdf7;
+  --muted: #6b6056;
+  --link: #79511a;
+  --rule: #e6ded2;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --ink: #f3e9dd; --paper: #211e1b; --muted: #c5b6a5; --link: #efc986; --rule: #534a40; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--ink); background: var(--paper); font: 15px/1.65 -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif; }
+main { max-width: 1120px; margin: 0 auto; padding: 36px clamp(16px, 4vw, 44px); }
+a { color: var(--link); text-underline-offset: 3px; }
+h1 { margin: 12px 0 28px; font-size: clamp(25px, 4vw, 38px); line-height: 1.25; }
+table { display: block; border-collapse: collapse; }
+thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+tbody { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(215px, 100%), 1fr)); gap: 30px 22px; }
+tbody tr { display: flex; flex-direction: column; gap: 9px; }
+td { padding: 0; }
+td:first-child { display: flex; align-items: flex-end; gap: 12px; }
+td img { display: block; border-radius: 22%; }
+td strong { font-size: 18px; }
+td small, main > p { color: var(--muted); }
+td:last-child { font-size: 13px; }
+main > p { margin-top: 30px; border-top: 1px solid var(--rule); padding-top: 16px; font-size: 13px; }

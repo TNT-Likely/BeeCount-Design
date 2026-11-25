@@ -14,6 +14,7 @@ python3 -m http.server 8374 --bind 127.0.0.1 --directory card-refresh
 - `/prototype/demo.html`：可交互主稿。
 - `/components/ui-components.html`：基础与业务组件目录。
 - `/boards/`：专项评审与里程碑大图。
+- [应用图标创意库](card-refresh/icon-ideas/)收录候选与探索稿，可在[离线画廊](card-refresh/icon-ideas/index.html)对照大图和 24 px 预览。
 
 已提交 HTML 和里程碑图可直接查看。`screens/` 逐页 PNG、`figma/` 批量 SVG、QA 与 Flutter-web renderer bundle 是可重建的本机生成物，不进入每次 review；未生成时目录索引中的逐页图片/导出链接不可用，但交互页面仍可打开。完整导出使用后述 `npm run export`。
 
