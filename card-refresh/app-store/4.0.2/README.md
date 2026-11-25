@@ -15,6 +15,30 @@
 
 四份原图均为不带透明通道的 sRGB PNG。[SHA-256 清单](exports/SHA256SUMS)对应 4.0.2 上传文件的原始字节。
 
+## 搜索结果 A/B 测试
+
+默认页 A 用一杯咖啡举例。方案 B 在同一张图上强调离线记账。两组共用产品页标题图、桌面背景和本地化账单行，三种语言各自的 A、B 成品只有标题文字区域存在像素差异。
+
+![从左到右为英语、简体中文和繁体中文的离线记账搜索图](treatments/offline/preview.png)
+
+| 本地化 | 默认页 A | 方案 B · 3840 × 2560 PNG |
+| --- | --- | --- |
+| 英语（美国） | Coffee, logged. | [Log it offline.](treatments/offline/BeeCount-Search-Offline-en-US.png) |
+| 简体中文 | 咖啡钱，记一笔 | [离线也能记账](treatments/offline/BeeCount-Search-Offline-zh-Hans.png) |
+| 繁體中文 | 咖啡錢，記一筆 | [離線也能記帳](treatments/offline/BeeCount-Search-Offline-zh-Hant.png) |
+
+测试设计为默认页与方案 B 各占 50%。4.0.2 发版时，将版本和这项产品页面优化测试放入同一份审核草稿，核对版本号后一起送审。[Apple 联合送审说明](https://developer.apple.com/help/app-store-connect/manage-submissions-to-app-review/overview-of-submitting-for-review/)
+
+在 `source/` 安装下方列出的依赖后，执行以下命令可重新导出并校验方案 B。导出器将[三种语言的标题图层](source/art/offline-headlines/)叠在各自已归档的 A 图上，保证标题以外的像素一致。
+
+```sh
+npm run render:offline
+cd ../build/offline
+shasum -a 256 -c ../../treatments/offline/SHA256SUMS
+```
+
+修改 B 文案时，编辑 `source/locales.json` 中的 `offlineHeadline`。在 `source/` 执行 `python3 refresh_fonts.py --offline` 更新字形，再运行 `npm run refresh:offline-headlines`，即可通过同一份 HTML 模板生成新的标题图层和三张搜索图。
+
 ## 构图与安全区
 
 坐标以成品左上角为原点，单位为像素。蜂和账本、搜索文案和账单行均完整落在相应安全区内。[Apple 素材规格](https://developer.apple.com/help/app-store-connect/reference/app-information/creative-assets-specifications/) · [Apple 设计指南与模板](https://developer.apple.com/app-store/asset-best-practices/)
@@ -28,7 +52,7 @@
 
 ## 重新导出
 
-在设计仓根目录执行以下命令。排版使用本机 Google Chrome，依赖版本由 npm 锁文件固定。原稿使用 Node.js 20.20.2 和 Chrome 158.0.8127.37。
+在设计仓根目录执行以下命令。排版使用本机 Google Chrome，依赖版本由 npm 锁文件固定。归档 PNG 使用 macOS、Metal 图形后端、Node.js 20.20.2 和 Chrome 158.0.8127.37 导出。其他图形后端的字体抗锯齿和阴影像素可能略有不同。
 
 ```sh
 cd card-refresh/app-store/4.0.2/source

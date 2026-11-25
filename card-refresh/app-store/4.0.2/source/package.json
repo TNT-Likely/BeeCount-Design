@@ -3,7 +3,9 @@
   "version": "4.0.2",
   "private": true,
   "scripts": {
-    "render": "node render.cjs"
+    "render": "node render.cjs",
+    "render:offline": "node render.cjs --offline",
+    "refresh:offline-headlines": "node render.cjs --refresh-offline-headlines"
   },
   "devDependencies": {
     "playwright": "1.62.1",

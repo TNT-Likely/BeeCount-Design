@@ -1,16 +1,19 @@
 {
   "en-US": {
     "headline": "Coffee, logged.",
+    "offlineHeadline": "Log it offline.",
     "titleFont": "BricolageGrotesque-800.ttf",
     "transaction": { "title": "Coffee on the way", "account": "Cash wallet", "tag": "Everyday", "amount": "−US$5.50" }
   },
   "zh-Hans": {
     "headline": "咖啡钱，记一笔",
+    "offlineHeadline": "离线也能记账",
     "titleFont": "NotoSansSC-800.ttf",
     "transaction": { "title": "街角的一杯拿铁", "account": "随身钱包", "tag": "日常", "amount": "−¥26.50" }
   },
   "zh-Hant": {
     "headline": "咖啡錢，記一筆",
+    "offlineHeadline": "離線也能記帳",
     "titleFont": "NotoSansTC-800.ttf",
     "transaction": { "title": "街角的一杯拿鐵", "account": "隨身錢包", "tag": "日常", "amount": "−NT$90.00" }
   }
