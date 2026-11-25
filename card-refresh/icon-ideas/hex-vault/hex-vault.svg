@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">蜜蜂记账 · 三格蜂巢</title>
+  <desc id="description">浅鹅黄底上三枚等距圆角六边形构成蜂巢：上方墨黑蜂格、左下琥珀账格、右下朱红蜜滴格。</desc>
+  <rect id="background" width="256" height="256" fill="#FCEABB"/>
+
+  <defs>
+    <!-- Rounded regular pointy-top hexagon: apothem 41, circumradius ~47.3 -->
+    <path id="hex" d="
+      M -6 -44.5
+      Q 0 -47.5 6 -44.5
+      L 36 -26.5
+      Q 41 -23.5 41 -17.5
+      L 41 17.5
+      Q 41 23.5 36 26.5
+      L 6 44.5
+      Q 0 47.5 -6 44.5
+      L -36 26.5
+      Q -41 23.5 -41 17.5
+      L -41 -17.5
+      Q -41 -23.5 -36 -26.5 Z"/>
+  </defs>
+
+  <!-- Equilateral spacing: dx = 91 -> dy = 91 * sqrt(3)/2 = 78.8 -->
+  <!-- Top hexagon: Deep charcoal-petrol with golden minimalist bee -->
+  <g transform="translate(128 81)">
+    <use href="#hex" fill="#1E262A"/>
+    <g transform="translate(0 3) rotate(-14)">
+      <!-- Two ivory wings -->
+      <path d="M -3 -8 C -16 -14 -24 -27 -16 -33 C -8 -39 2 -24 3 -9 Z" fill="#FFF7E2"/>
+      <path d="M 3 -8 C 2 -22 10 -32 18 -29 C 25 -26 20 -13 9 -7 Z" fill="#FFE29B"/>
+      <!-- Plump golden body with clean clipped stripes -->
+      <defs>
+        <ellipse id="hex-bee-body" cx="0" cy="4" rx="22" ry="15"/>
+        <clipPath id="hex-bee-clip">
+          <use href="#hex-bee-body"/>
+        </clipPath>
+      </defs>
+      <use href="#hex-bee-body" fill="#F7A800"/>
+      <g clip-path="url(#hex-bee-clip)">
+        <rect x="-12" y="-14" width="6.5" height="36" fill="#1E262A"/>
+        <rect x="-1" y="-14" width="6.5" height="36" fill="#1E262A"/>
+      </g>
+      <!-- Tiny antenna & eye -->
+      <path d="M 15 -7 C 18 -13 23 -15 26 -12" fill="none" stroke="#F7A800" stroke-width="3.5" stroke-linecap="round"/>
+      <circle cx="15" cy="2" r="2.6" fill="#1E262A"/>
+    </g>
+  </g>
+
+  <!-- Bottom-left hexagon: Vivid saffron with two cream ledger bars -->
+  <g transform="translate(82.5 159.8)">
+    <use href="#hex" fill="#F7A800"/>
+    <rect x="-21" y="-11" width="42" height="9" rx="4.5" fill="#FFF7E2"/>
+    <rect x="-21" y="5" width="28" height="9" rx="4.5" fill="#FFF7E2"/>
+  </g>
+
+  <!-- Bottom-right hexagon: Warm vermilion with crisp cream honey droplet -->
+  <g transform="translate(173.5 159.8)">
+    <use href="#hex" fill="#EB5A34"/>
+    <path d="M 0 -18 C 11 -4 15 3 15 10.5 C 15 18.8 8.3 24.5 0 24.5 C -8.3 24.5 -15 18.8 -15 10.5 C -15 3 -11 -4 0 -18 Z" fill="#FFF7E2"/>
+  </g>
+</svg>
