@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">蜜蜂记账 · 蜂翼票夹</title>
+  <desc id="desc">两只深色金属夹柄向两侧张开，蜂黄色的长尾夹夹着两张有金额横线的小票。</desc>
+  <rect id="background" width="256" height="256" fill="#D4E6EA"/>
+  <g id="clip-and-vouchers" transform="rotate(-8 128 128)">
+    <path id="second-voucher" fill="#E3D4B7" d="M82 146 H178 V211 H82 Z"/>
+    <path id="front-voucher" fill="#FFF6E3" d="M76 143 H174 V204 H76 Z"/>
+    <path id="amounts" fill="none" stroke="#746754" stroke-width="3.8" stroke-linecap="round"
+          d="M140 174 H160 M146 182 H160 M125 191 H161"/>
+    <g id="wire-handles" fill="none" stroke="#31383A" stroke-width="9" stroke-linecap="round">
+      <path d="M87 111 C66 112 41 100 37 82 C34 67 40 55 53 54 C72 53 92 78 106 104"/>
+      <path d="M143 103 C155 74 177 41 194 47 C208 51 216 66 210 80 C204 96 179 107 161 112"/>
+    </g>
+    <path id="enamel" fill="#EFB52D" d="M94 98 H161 Q168 98 170 105 L184 153 Q187 165 175 165 H80 Q68 165 72 153 L85 105 Q87 98 94 98 Z"/>
+    <path id="abdomen-band" fill="#31383A" d="M80 124 H175.5 L179.5 138 H76.2 Z"/>
+    <rect id="rolled-jaw" x="70" y="152" width="116" height="14" rx="7" fill="#31383A"/>
+  </g>
+</svg>

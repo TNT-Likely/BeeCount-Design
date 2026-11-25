@@ -15,10 +15,34 @@
     </tr>
     <tr>
       <td>
+        <a href="receipt-clip/enamel-study.png"><img src="receipt-clip/enamel-study.png" width="96" height="96" alt="蜂黄色的金属长尾夹，两只夹柄像翅膀，下面露出两笔金额"></a>
+        <img src="receipt-clip/receipt-clip.png" width="24" height="24" alt="同一票夹的 24 px 平面稿">
+      </td>
+      <td><strong>蜂翼票夹</strong><br>把夹票据的两只金属夹柄弯成蜂翅，夹身的黄黑横带就是蜂纹。<br><small>2026-11-25 · 探索稿</small></td>
+      <td><a href="receipt-clip/enamel-study.png">金属质感稿</a> · <a href="receipt-clip/receipt-clip.svg">平面 SVG</a> · <a href="receipt-clip/receipt-clip.png">平面 PNG</a> · <a href="receipt-clip/prompt.txt">质感稿提示词</a></td>
+    </tr>
+    <tr>
+      <td>
+        <a href="plus-minus-bee/plus-minus-bee.png"><img src="plus-minus-bee/plus-minus-bee.png" width="96" height="96" alt="墨蓝小蜂的两道金色腹纹分别是加号和减号"></a>
+        <img src="plus-minus-bee/plus-minus-bee.png" width="24" height="24" alt="">
+      </td>
+      <td><strong>收支蜂</strong><br>两道蜂纹各占一行，读作收入的加号和支出的减号。<br><small>2026-11-25 · 探索稿</small></td>
+      <td><a href="plus-minus-bee/plus-minus-bee.svg">可编辑 SVG</a> · <a href="plus-minus-bee/plus-minus-bee.png">1024 px PNG</a></td>
+    </tr>
+    <tr>
+      <td>
+        <a href="ledger-character/ledger-character.png"><img src="ledger-character/ledger-character.png" width="96" height="96" alt="枣红底米白记字，言字旁的一点是一只斜飞的小金蜂"></a>
+        <img src="ledger-character/ledger-character.png" width="24" height="24" alt="">
+      </td>
+      <td><strong>记字章</strong><br>把「记」字言字旁的一点画成金色小蜂，留在账本封面的一角。<br><small>2026-11-25 · 探索稿</small></td>
+      <td><a href="ledger-character/ledger-character.svg">可编辑 SVG</a> · <a href="ledger-character/ledger-character.png">1024 px PNG</a></td>
+    </tr>
+    <tr>
+      <td>
         <a href="flower-dive/flower-dive.png"><img src="flower-dive/flower-dive.png" width="96" height="96" alt="蜜蜂一头钻进白花，黄黑相间的尾巴翘在外面"></a>
         <img src="flower-dive/flower-dive.png" width="24" height="24" alt="">
       </td>
-      <td><strong>埋头蜂</strong><br>小蜂一头钻进花心，只露出翅膀和圆滚滚的尾巴。<br><small>2026-11-25 · 探索稿</small></td>
+      <td><strong>埋头蜂</strong><br>小蜂一头钻进花心，只露出翅膀和圆滚滚的尾巴。<br><small>2026-11-25 · 已搁置</small></td>
       <td><a href="flower-dive/flower-dive.png">概念原图</a> · <a href="flower-dive/prompt.txt">生成提示词</a></td>
     </tr>
     <tr>
@@ -26,7 +50,7 @@
         <a href="runaway-bead/runaway-bead.png"><img src="runaway-bead/runaway-bead.png" width="96" height="96" alt="朱红色底上，一颗金色算珠长出翅膀从算盘右上角飞走"></a>
         <img src="runaway-bead/runaway-bead.png" width="24" height="24" alt="">
       </td>
-      <td><strong>出逃算珠</strong><br>算盘空出一档，那颗金色算珠长出翅膀飞走了。<br><small>2026-11-25 · 探索稿</small></td>
+      <td><strong>出逃算珠</strong><br>算盘空出一档，那颗金色算珠长出翅膀飞走了。<br><small>2026-11-25 · 已搁置</small></td>
       <td><a href="runaway-bead/runaway-bead.png">概念原图</a> · <a href="runaway-bead/first-sketch.png">初稿</a> · <a href="runaway-bead/prompt.txt">生成提示词</a></td>
     </tr>
     <tr>
@@ -34,7 +58,7 @@
         <a href="brush-bee/brush-bee.png"><img src="brush-bee/brush-bee.png" width="96" height="96" alt="金黄色底上，墨线回环成翅膀，收笔成蜂尾"></a>
         <img src="brush-bee/brush-bee.png" width="24" height="24" alt="">
       </td>
-      <td><strong>一笔蜂</strong><br>墨线绕出一只翅膀，收笔处拖出微翘的蜂尾。<br><small>2026-11-25 · 探索稿</small></td>
+      <td><strong>一笔蜂</strong><br>墨线绕出一只翅膀，收笔处拖出微翘的蜂尾。<br><small>2026-11-25 · 已搁置</small></td>
       <td><a href="brush-bee/brush-bee.png">概念原图</a> · <a href="brush-bee/prompt.txt">生成提示词</a></td>
     </tr>
   </tbody>
