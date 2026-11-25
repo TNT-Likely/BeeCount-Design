@@ -13,12 +13,28 @@
       <td><strong>采粉蜂</strong><br>小蜂侧身飞起，前足抱住一粒花粉。<br><small>2026-11-25 · 保留备选</small></td>
       <td><a href="pollen-bee/pollen-bee.svg">可编辑 SVG</a> · <a href="pollen-bee/pollen-bee.png">1024 px PNG</a> · <a href="pollen-bee/sketch.png">最初草图</a></td>
     </tr>
+    <tr id="ink-nib-bee">
+      <td>
+        <a href="ink-nib-bee/ink-nib-bee.png"><img src="ink-nib-bee/ink-nib-bee.png" width="96" height="96" alt="蜜黄底上，一只墨色蜜蜂用钢笔尖形状的尾巴落下一横"></a>
+        <img src="ink-nib-bee/ink-nib-bee.png" width="24" height="24" alt="">
+      </td>
+      <td><strong>落笔蜂</strong><br>小蜂斜斜起飞，钢笔尖藏在蜂尾里，刚写好的一横留在原地。<br><small>2026-11-25 · 探索稿</small></td>
+      <td><a href="ink-nib-bee/ink-nib-bee.svg">可编辑 SVG</a> · <a href="ink-nib-bee/ink-nib-bee.png">1024 px PNG</a> · <a href="ink-nib-bee/study.png">概念原图</a> · <a href="ink-nib-bee/prompt.txt">生成提示词</a></td>
+    </tr>
+    <tr id="pocket-bookkeeper">
+      <td>
+        <a href="pocket-bookkeeper/pocket-bookkeeper.png"><img src="pocket-bookkeeper/pocket-bookkeeper.png" width="96" height="96" alt="小蜂垂眼看着摊开的账本，红铅笔落在 6.50 旁边"></a>
+        <img src="pocket-bookkeeper/pocket-bookkeeper.png" width="24" height="24" alt="">
+      </td>
+      <td><strong>小账房</strong><br>小蜂一只手托着账页，另一只手刚用红铅笔记下 6.50。<br><small>2026-11-25 · 探索稿</small></td>
+      <td><a href="pocket-bookkeeper/pocket-bookkeeper.png">记账稿 PNG</a> · <a href="pocket-bookkeeper/reading-study.png">看账初稿</a> · <a href="pocket-bookkeeper/prompt.txt">两次生成提示词</a></td>
+    </tr>
     <tr>
       <td>
         <a href="receipt-clip/enamel-study.png"><img src="receipt-clip/enamel-study.png" width="96" height="96" alt="蜂黄色的金属长尾夹，两只夹柄像翅膀，下面露出两笔金额"></a>
         <img src="receipt-clip/receipt-clip.png" width="24" height="24" alt="同一票夹的 24 px 平面稿">
       </td>
-      <td><strong>蜂翼票夹</strong><br>把夹票据的两只金属夹柄弯成蜂翅，夹身的黄黑横带就是蜂纹。<br><small>2026-11-25 · 探索稿</small></td>
+      <td><strong>蜂翼票夹</strong><br>把夹票据的两只金属夹柄弯成蜂翅，夹身的黄黑横带就是蜂纹。<br><small>2026-11-25 · 已搁置</small></td>
       <td><a href="receipt-clip/enamel-study.png">金属质感稿</a> · <a href="receipt-clip/receipt-clip.svg">平面 SVG</a> · <a href="receipt-clip/receipt-clip.png">平面 PNG</a> · <a href="receipt-clip/prompt.txt">质感稿提示词</a></td>
     </tr>
     <tr>
@@ -26,7 +42,7 @@
         <a href="plus-minus-bee/plus-minus-bee.png"><img src="plus-minus-bee/plus-minus-bee.png" width="96" height="96" alt="墨蓝小蜂的两道金色腹纹分别是加号和减号"></a>
         <img src="plus-minus-bee/plus-minus-bee.png" width="24" height="24" alt="">
       </td>
-      <td><strong>收支蜂</strong><br>两道蜂纹各占一行，读作收入的加号和支出的减号。<br><small>2026-11-25 · 探索稿</small></td>
+      <td><strong>收支蜂</strong><br>两道蜂纹各占一行，读作收入的加号和支出的减号。<br><small>2026-11-25 · 已搁置</small></td>
       <td><a href="plus-minus-bee/plus-minus-bee.svg">可编辑 SVG</a> · <a href="plus-minus-bee/plus-minus-bee.png">1024 px PNG</a></td>
     </tr>
     <tr>
@@ -34,7 +50,7 @@
         <a href="ledger-character/ledger-character.png"><img src="ledger-character/ledger-character.png" width="96" height="96" alt="枣红底米白记字，言字旁的一点是一只斜飞的小金蜂"></a>
         <img src="ledger-character/ledger-character.png" width="24" height="24" alt="">
       </td>
-      <td><strong>记字章</strong><br>把「记」字言字旁的一点画成金色小蜂，留在账本封面的一角。<br><small>2026-11-25 · 探索稿</small></td>
+      <td><strong>记字章</strong><br>把「记」字言字旁的一点画成金色小蜂，留在账本封面的一角。<br><small>2026-11-25 · 已搁置</small></td>
       <td><a href="ledger-character/ledger-character.svg">可编辑 SVG</a> · <a href="ledger-character/ledger-character.png">1024 px PNG</a></td>
     </tr>
     <tr>
