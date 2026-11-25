@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">蜜蜂记账 · 滴蜜沙漏</title>
+  <desc id="description">深墨青底上，两只六边形蜜室连成沙漏，两侧展开米白蜂翅，一滴亮红蜂蜜正落入下室。</desc>
+  <rect id="background" width="256" height="256" fill="#152B33"/>
+
+  <!-- Two plump ivory bee wings tucked cleanly behind the hourglass waist -->
+  <g id="wings">
+    <path d="M 118 128 C 84 128 50 112 50 90 C 50 70 80 68 112 106 Z" fill="#FFF6E2"/>
+    <path d="M 138 128 C 172 128 206 112 206 90 C 206 70 176 68 144 106 Z" fill="#FFF6E2"/>
+  </g>
+
+  <!-- Hexagonal hourglass frame -->
+  <g id="hourglass">
+    <path id="top-chamber" d="
+      M 86 44
+      H 170
+      Q 178 44 178 52
+      V 78
+      Q 178 86 171 91
+      L 136 119
+      Q 128 125 120 119
+      L 85 91
+      Q 78 86 78 78
+      V 52
+      Q 78 44 86 44 Z" fill="#1D3842" stroke="#FFF6E2" stroke-width="6" stroke-linejoin="round"/>
+    <path d="M 96 86 H 160 L 134 109 Q 128 114 122 109 Z" fill="#F7AA00"/>
+
+    <path id="bot-chamber" d="
+      M 120 137
+      Q 128 131 136 137
+      L 171 165
+      Q 178 170 178 178
+      V 204
+      Q 178 212 170 212
+      H 86
+      Q 78 212 78 204
+      V 178
+      Q 78 170 85 165 Z" fill="#1D3842" stroke="#FFF6E2" stroke-width="6" stroke-linejoin="round"/>
+
+    <defs>
+      <path id="bot-inner" d="M 128 140 L 173 173 V 206 H 83 V 173 Z"/>
+      <clipPath id="bot-clip"><use href="#bot-inner"/></clipPath>
+    </defs>
+    <g clip-path="url(#bot-clip)">
+      <path d="M 76 178 Q 102 172 128 178 T 180 178 V 214 H 76 Z" fill="#F7AA00"/>
+    </g>
+
+    <rect x="68" y="36" width="120" height="14" rx="7" fill="#F7AA00"/>
+    <rect x="68" y="206" width="120" height="14" rx="7" fill="#F7AA00"/>
+
+    <path d="M 128 134 C 134 143 137 148 137 153 C 137 158.5 133 162 128 162 C 123 162 119 158.5 119 153 C 119 148 122 143 128 134 Z" fill="#EE5834"/>
+  </g>
+</svg>

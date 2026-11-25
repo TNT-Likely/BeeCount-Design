@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">蜜蜂记账 · 小账房（蜜蜂本体优化版）</title>
+  <desc id="description">燕麦色底上，一只圆润可爱的小蜜蜂双手捧着摊开的账本，正用朱红铅笔在 6.50 旁边落笔。</desc>
+  <rect id="background" width="256" height="256" fill="#FCE2BA"/>
+
+  <!-- Soft plump pale-ivory wings tucked nicely behind the bee's shoulders -->
+  <g id="wings">
+    <!-- Far lower wing lobes -->
+    <path d="M 80 124 C 46 130 22 118 24 98 C 26 78 58 76 88 102 Z" fill="#EBD7B4"/>
+    <path d="M 176 124 C 210 130 234 118 232 98 C 230 78 198 76 168 102 Z" fill="#EBD7B4"/>
+    <!-- Main plump ivory wings -->
+    <path d="M 86 116 C 50 112 24 88 32 68 C 40 48 76 58 96 96 Z" fill="#FFF8EC"/>
+    <path d="M 170 116 C 206 112 232 88 224 68 C 216 48 180 58 160 96 Z" fill="#FFF8EC"/>
+  </g>
+
+  <!-- Plump striped bumblebee lower belly peeking below the book -->
+  <g id="belly">
+    <ellipse cx="128" cy="194" rx="48" ry="30" fill="#13323B"/>
+    <path d="M 84 188 Q 128 202 172 188 Q 166 205 128 212 Q 90 205 84 188 Z" fill="#F7A800"/>
+  </g>
+
+  <!-- Cute, cohesive plush bumblebee head & shoulders (no weird dark side cheeks!) -->
+  <g id="bee-head">
+    <!-- Short perky antennae -->
+    <path d="M 110 56 C 105 40 94 34 86 38" fill="none" stroke="#13323B" stroke-width="6.5" stroke-linecap="round"/>
+    <circle cx="85" cy="39" r="5" fill="#13323B"/>
+    <path d="M 146 56 C 151 40 162 34 170 38" fill="none" stroke="#13323B" stroke-width="6.5" stroke-linecap="round"/>
+    <circle cx="171" cy="39" r="5" fill="#13323B"/>
+
+    <!-- Dark-petrol plush shoulder / neck collar -->
+    <ellipse cx="128" cy="126" rx="52" ry="30" fill="#13323B"/>
+
+    <!-- Chubby warm marigold round face -->
+    <path d="
+      M 74 96
+      C 74 66 96 48 128 48
+      C 160 48 182 66 182 96
+      C 182 124 160 138 128 138
+      C 96 138 74 124 74 96 Z" fill="#F8AC00"/>
+
+    <!-- Cute dark-petrol velvety crown bangs/cap at the very top (gives crisp bee silhouette without ugly side cheeks) -->
+    <path d="
+      M 86 72
+      C 96 54 111 47 128 47
+      C 145 47 160 54 170 72
+      C 154 64 140 62 128 66
+      C 116 62 102 64 86 72 Z" fill="#13323B"/>
+
+    <!-- Friendly big dark eyes placed slightly lower & wider for warm mascot charm -->
+    <ellipse cx="105" cy="100" rx="6.5" ry="7.8" fill="#13323B"/>
+    <ellipse cx="151" cy="100" rx="6.5" ry="7.8" fill="#13323B"/>
+    <!-- Tiny crisp light catchlights so the gaze feels alive & attentive -->
+    <circle cx="107" cy="98" r="2" fill="#FFF8EC"/>
+    <circle cx="153" cy="98" r="2" fill="#FFF8EC"/>
+
+    <!-- Subtle warm coral cheek dots (soft flat editorial warmth) -->
+    <ellipse cx="90" cy="111" rx="7" ry="4.2" fill="#EE7A44" opacity="0.55"/>
+    <ellipse cx="166" cy="111" rx="7" ry="4.2" fill="#EE7A44" opacity="0.55"/>
+  </g>
+
+  <!-- Open Pocket Account Ledger -->
+  <g id="ledger">
+    <!-- Vermilion bookmark ribbon hanging from bottom edge -->
+    <path d="M 146 196 H 161 V 226 L 153.5 220 L 146 226 Z" fill="#EC5331"/>
+
+    <!-- Deep petrol hardcover cradle -->
+    <path d="
+      M 44 148
+      C 60 138 106 138 128 152
+      C 150 138 196 138 212 148
+      L 206 202
+      C 198 209 180 205 156 205
+      C 142 205 134 210 128 211
+      C 122 210 114 205 100 205
+      C 76 205 58 209 50 202 Z" fill="#13323B"/>
+
+    <!-- Cream open page spread -->
+    <path d="
+      M 51 144
+      C 66 132 108 134 128 150
+      C 148 134 190 132 205 144
+      L 199 194
+      C 178 190 144 192 128 202
+      C 112 192 78 190 57 194 Z" fill="#FFF8EC"/>
+
+    <!-- Subtle warm page edge shadow along bottom -->
+    <path d="
+      M 57 194
+      C 78 190 112 192 128 202
+      C 144 192 178 190 199 194
+      L 198 199
+      C 178 195 144 197 128 207
+      C 112 197 78 195 58 199 Z" fill="#E8D8BC"/>
+
+    <!-- Soft center spine crease -->
+    <path d="M 128 150 L 128 202" stroke="#DFCDAE" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Left page: two tidy teal entry marks -->
+    <rect x="68" y="156" width="38" height="5.5" rx="2.75" fill="#1B7B7E"/>
+    <rect x="68" y="170" width="34" height="5.5" rx="2.75" fill="#1B7B7E"/>
+
+    <!-- Right page: fine teal vertical ruling + clean 18.00 / 6.50 (clear of pencil tip) -->
+    <line x1="135" y1="150" x2="135" y2="188" stroke="#1B7B7E" stroke-width="2.2" stroke-linecap="round"/>
+    <text x="140" y="164" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Rounded', sans-serif" font-size="12.5" font-weight="700" fill="#13323B">18.00</text>
+    <text x="144" y="182" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Rounded', sans-serif" font-size="12.5" font-weight="700" fill="#13323B">6.50</text>
+  </g>
+
+  <!-- Left paw holding the ledger + Right paw holding the chunky red pencil -->
+  <g id="paws-and-pencil">
+    <!-- Left mitten paw -->
+    <ellipse cx="47" cy="176" rx="12" ry="10.5" fill="#13323B"/>
+
+    <!-- Chunky vermilion-red pencil at natural diagonal, tip touching just right of 6.50 -->
+    <g transform="translate(194 162) rotate(36)">
+      <!-- Wood cone & graphite tip -->
+      <path d="M -5 18 L 5 18 L 0 29 Z" fill="#F2D7B4"/>
+      <path d="M -2.2 24 L 2.2 24 L 0 29 Z" fill="#13323B"/>
+      <!-- Red barrel -->
+      <rect x="-5" y="-14" width="10" height="32" rx="4" fill="#EC5331"/>
+    </g>
+
+    <!-- Right mitten paw gripping the pencil -->
+    <ellipse cx="207" cy="167" rx="11.5" ry="10" fill="#13323B"/>
+  </g>
+</svg>

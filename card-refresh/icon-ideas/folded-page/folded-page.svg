@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">蜜蜂记账 · 折角账页</title>
+  <desc id="description">蜜黄底上，一张米白账页右下角折起，一只圆滚滚的小蜜蜂停在右上角留白处看账。</desc>
+  <rect id="background" width="256" height="256" fill="#FCE5A6"/>
+
+  <!-- Ledger sheet with folded bottom-right corner -->
+  <g id="ledger-sheet">
+    <path d="
+      M 54 44
+      H 186
+      Q 198 44 198 56
+      V 158
+      L 142 214
+      H 54
+      Q 42 214 42 202
+      V 56
+      Q 42 44 54 44 Z" fill="#FFFBF2"/>
+
+    <!-- Minimalist ledger entry bars well clear of the top-right bee -->
+    <rect x="66" y="76" width="58" height="12" rx="6" fill="#232B2E"/>
+    <rect x="66" y="104" width="84" height="12" rx="6" fill="#DDD0B8"/>
+    <rect x="66" y="132" width="74" height="12" rx="6" fill="#DDD0B8"/>
+    <rect x="66" y="160" width="46" height="12" rx="6" fill="#EE5834"/>
+
+    <!-- Folded corner triangle -->
+    <path d="M 142 214 V 170 Q 142 158 154 158 H 198 Z" fill="#E6D5B5"/>
+  </g>
+
+  <!-- Cute pollen-bee-style bumblebee perched cleanly on upper-right corner facing the ledger -->
+  <g id="corner-bee" transform="translate(184 72) scale(-0.9 0.9) rotate(16)">
+    <!-- Far paddle wing -->
+    <path d="M -18 -14 C -36 -22 -48 -14 -45 -2 C -42 10 -24 14 -10 8 Z" fill="#232B2E"/>
+
+    <!-- Cute curved antenna -->
+    <path d="M 21 -14 C 24 -24 32 -29 39 -26 C 42 -24 42 -20 39 -19 C 33 -18 29 -13 28 -7 Z" fill="#232B2E"/>
+
+    <!-- Unified plump organic body -->
+    <path d="
+      M -24 -4
+      C -33 6 -36 18 -31 27
+      C -23 39 7 41 24 27
+      C 36 17 42 2 39 -9
+      C 36 -20 24 -26 12 -23
+      C -2 -20 -16 -13 -24 -4 Z" fill="#232B2E"/>
+
+    <!-- Generous golden honey band -->
+    <path d="
+      M -12 -13
+      C -4 -17 4 -19 10 -19
+      C 4 -7 3 8 8 20
+      C 12 27 17 31 20 31
+      C 12 37 2 39 -8 37
+      C -18 30 -22 18 -20 4
+      C -19 -3 -16 -9 -12 -13 Z" fill="#F7B000"/>
+
+    <!-- Framed ivory near wing -->
+    <path d="
+      M 11 -14
+      C 15 -18 13 -26 5 -35
+      C -6 -46 -22 -49 -31 -41
+      C -39 -34 -37 -20 -28 -12
+      C -18 -3 -1 0 11 -14 Z" fill="#232B2E"/>
+    <path d="
+      M 8 -16
+      C 11 -19 8 -25 2 -31
+      C -7 -40 -20 -42 -26 -37
+      C -32 -31 -30 -21 -23 -15
+      C -15 -8 -1 -7 8 -16 Z" fill="#FFFBF2"/>
+
+    <!-- Friendly ivory eye -->
+    <circle cx="28" cy="-4" r="3.8" fill="#FFFBF2"/>
+  </g>
+</svg>
