@@ -1,59 +1,48 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
-  <title id="title">蜜蜂记账 · 蜜罐守账（卡通萌版）</title>
-  <desc id="description">暖燕麦底上，一只圆脸腮红的卡通小蜜蜂双手扶在半满蜂蜜的奶白陶罐口往下看，罐旁挂着朱红小签。</desc>
-  <rect id="background" width="256" height="256" fill="#F0DAB7"/>
+  <title id="title">蜜蜂记账 · 蜜罐守账（扁平插画精修版）</title>
+  <desc id="description">暖燕麦底上，一只线条干净的扁平插画小蜜蜂伏在半满蜂蜜的奶白陶罐口往下看，罐旁垂着朱红小签。</desc>
+  <rect id="background" width="256" height="256" fill="#ECD6B2"/>
 
-  <!-- Cute puffy wings behind the perched cartoon bee -->
+  <!-- Soft un-outlined ivory wings behind bee -->
   <g id="wings">
-    <path d="M 96 86 C 58 88 38 68 48 48 C 58 28 90 42 104 76 Z" fill="#FFFFFF" stroke="#3B2316" stroke-width="4.5" stroke-linejoin="round"/>
-    <path d="M 160 86 C 198 88 218 68 208 48 C 198 28 166 42 152 76 Z" fill="#FFFFFF" stroke="#3B2316" stroke-width="4.5" stroke-linejoin="round"/>
+    <path d="M 96 86 C 60 88 42 70 50 52 C 58 34 88 46 102 76 Z" fill="#FFFBF3"/>
+    <path d="M 160 86 C 196 88 214 70 206 52 C 198 34 168 46 154 76 Z" fill="#FFFBF3"/>
   </g>
 
-  <!-- Plump striped bee back peeking behind pot rim -->
+  <!-- Subtle striped bee shoulders tucked cleanly behind head -->
   <g id="bee-body">
-    <ellipse cx="128" cy="100" rx="38" ry="26" fill="#FFC928" stroke="#3B2316" stroke-width="5"/>
-    <path d="M 95 98 Q 128 110 161 98" fill="none" stroke="#3B2316" stroke-width="8" stroke-linecap="round"/>
+    <ellipse cx="128" cy="102" rx="25" ry="18" fill="#1C2E36"/>
   </g>
 
-  <!-- Cute mochi-cheeked cartoon bee head peeking above the rim -->
+  <!-- Clean flat-editorial bee head peering into the pot (no heavy outline, no pink cheeks, no w-mouth) -->
   <g id="bee-head">
-    <!-- Bouncy short antennae -->
-    <path d="M 110 46 C 105 33 95 28 88 33" fill="none" stroke="#3B2316" stroke-width="5" stroke-linecap="round"/>
-    <circle cx="87" cy="34" r="5" fill="#3B2316"/>
-    <path d="M 146 46 C 151 33 161 28 168 33" fill="none" stroke="#3B2316" stroke-width="5" stroke-linecap="round"/>
-    <circle cx="169" cy="34" r="5" fill="#3B2316"/>
+    <!-- Short tidy antennae -->
+    <path d="M 111 47 C 106 34 97 30 90 34 C 88 35 88 39 91 39 C 97 39 102 43 106 50 Z" fill="#1C2E36"/>
+    <path d="M 145 47 C 150 34 159 30 166 34 C 168 35 168 39 165 39 C 159 39 154 43 150 50 Z" fill="#1C2E36"/>
 
     <defs>
-      <path id="hj-head" d="
-        M 128 41
-        C 152 41 168 53 173 72
-        C 177 89 169 104 152 109
-        C 140 112 116 112 104 109
-        C 87 104 79 89 83 72
-        C 88 53 104 41 128 41 Z"/>
-      <clipPath id="hj-head-clip"><use href="#hj-head"/></clipPath>
+      <path id="hj-clean-head" d="
+        M 128 43
+        C 150 43 166 55 169 73
+        C 172 91 159 108 128 108
+        C 97 108 84 91 87 73
+        C 90 55 106 43 128 43 Z"/>
+      <clipPath id="hj-clean-clip"><use href="#hj-clean-head"/></clipPath>
     </defs>
 
-    <use href="#hj-head" fill="#FFC928"/>
-    <g clip-path="url(#hj-head-clip)">
-      <ellipse cx="128" cy="110" rx="48" ry="14" fill="#F29F05" opacity="0.55"/>
-      <ellipse cx="120" cy="57" rx="22" ry="9" fill="#FFE47A" opacity="0.75"/>
+    <use href="#hj-clean-head" fill="#F8AF14"/>
+    <g clip-path="url(#hj-clean-clip)">
+      <!-- Subtle dark crown cap -->
+      <path d="M 95 57 C 107 43 118 40 128 40 C 138 40 149 43 161 57 C 148 52 138 51 128 53 C 118 51 108 52 95 57 Z" fill="#1C2E36"/>
+      <ellipse cx="128" cy="106" rx="42" ry="10" fill="#E39307" opacity="0.4"/>
     </g>
-    <use href="#hj-head" fill="none" stroke="#3B2316" stroke-width="4.8"/>
 
-    <!-- Happy sparkling eyes glancing down into the honey pot -->
-    <circle cx="107" cy="81" r="6.8" fill="#3B2316"/>
-    <circle cx="105" cy="79" r="2.5" fill="#FFFFFF"/>
-    <circle cx="149" cy="81" r="6.8" fill="#3B2316"/>
-    <circle cx="147" cy="79" r="2.5" fill="#FFFFFF"/>
-
-    <!-- Rosy cheeks & tiny happy mouth -->
-    <ellipse cx="94" cy="90" rx="7" ry="4.2" fill="#FF8468" opacity="0.8"/>
-    <ellipse cx="162" cy="90" rx="7" ry="4.2" fill="#FF8468" opacity="0.8"/>
-    <path d="M 122 88 Q 125 92 128 89 Q 131 92 134 88" fill="none" stroke="#3B2316" stroke-width="3.2" stroke-linecap="round"/>
+    <!-- Calm oval eyes gazing down into the honey -->
+    <ellipse cx="111" cy="81" rx="4.4" ry="6" transform="rotate(-8 111 81)" fill="#1C2E36"/>
+    <ellipse cx="145" cy="81" rx="4.4" ry="6" transform="rotate(8 145 81)" fill="#1C2E36"/>
   </g>
 
-  <!-- Honey pot -->
+  <!-- Clean flat-editorial honey pot (no heavy cartoon outline) -->
   <g id="honey-pot">
     <defs>
       <path id="pot-body" d="
@@ -69,27 +58,25 @@
       </clipPath>
     </defs>
 
-    <use href="#pot-body" fill="#FFFDF7"/>
+    <use href="#pot-body" fill="#FFFBF3"/>
     <g clip-path="url(#pot-clip)">
-      <!-- Golden honey fill -->
-      <path d="M 46 160 Q 87 152 128 160 T 210 160 L 210 232 L 46 232 Z" fill="#F9A800"/>
-      <!-- Soft cream shine on pot shoulder -->
-      <path d="M 75 174 C 71 184 72 195 79 204" fill="none" stroke="#FFE47A" stroke-width="6" stroke-linecap="round"/>
+      <path d="M 46 158 Q 87 151 128 158 T 210 158 L 210 232 L 46 232 Z" fill="#F7AA00"/>
+      <!-- Clean flat base band grounding the pot -->
+      <rect x="46" y="216" width="164" height="14" fill="#1C2E36"/>
     </g>
-    <use href="#pot-body" fill="none" stroke="#3B2316" stroke-width="5" stroke-linejoin="round"/>
 
     <!-- Pot collar rim -->
-    <rect x="75" y="106" width="106" height="17" rx="8.5" fill="#2A3E47" stroke="#3B2316" stroke-width="4.5"/>
+    <rect x="76" y="106" width="104" height="16" rx="8" fill="#1C2E36"/>
 
     <!-- Vermilion ledger tag -->
-    <path d="M 164 122 L 171 134" stroke="#3B2316" stroke-width="3.5" stroke-linecap="round"/>
-    <path d="M 164 131 L 184 130 L 188 158 L 168 161 L 161 136 Z" fill="#EE5533" stroke="#3B2316" stroke-width="3.2" stroke-linejoin="round"/>
-    <circle cx="171" cy="137" r="2.5" fill="#FFFDF7"/>
+    <path d="M 164 120 L 171 133" stroke="#1C2E36" stroke-width="3.2" stroke-linecap="round"/>
+    <path d="M 164 129 L 184 128 L 188 156 L 168 159 L 161 134 Z" fill="#EC5331"/>
+    <circle cx="171" cy="135" r="2.3" fill="#FFFBF3"/>
   </g>
 
-  <!-- Two cute little golden paws resting happily on the pot rim -->
+  <!-- Two neat little dark-petrol paws resting on the collar -->
   <g id="paws">
-    <ellipse cx="98" cy="110" rx="10" ry="7.5" fill="#FFC928" stroke="#3B2316" stroke-width="4.2"/>
-    <ellipse cx="158" cy="110" rx="10" ry="7.5" fill="#FFC928" stroke="#3B2316" stroke-width="4.2"/>
+    <ellipse cx="99" cy="110" rx="9.5" ry="6.5" fill="#1C2E36"/>
+    <ellipse cx="157" cy="110" rx="9.5" ry="6.5" fill="#1C2E36"/>
   </g>
 </svg>

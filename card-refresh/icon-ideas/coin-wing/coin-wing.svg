@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">蜜蜂记账 · 飞币蜂</title>
+  <desc id="description">深墨青底上，一枚带有双道蜂纹与一对米白飞翅的金黄硬币，把记账与蜜蜂合二为一。</desc>
+  <rect id="background" width="256" height="256" fill="#17313A"/>
+
+  <!-- Minimalist winged honey-coin mark centered at (128, 134) -->
+  <g id="coin-bee">
+    <!-- Plump symmetrical ivory bee wings cleanly clear of the central antennae -->
+    <path d="M 96 116 C 58 114 32 90 38 68 C 44 46 78 56 104 100 Z" fill="#EFE4CE"/>
+    <path d="M 160 116 C 198 114 224 90 218 68 C 212 46 178 56 152 100 Z" fill="#EFE4CE"/>
+    <path d="M 102 108 C 70 98 50 72 60 54 C 70 36 98 54 112 96 Z" fill="#FFFBF3"/>
+    <path d="M 154 108 C 186 98 206 72 196 54 C 186 36 158 54 144 96 Z" fill="#FFFBF3"/>
+
+    <!-- Tiny curled antennae sitting cleanly in the gap between wings -->
+    <path d="M 119 82 C 117 67 110 60 103 63 C 100 65 101 69 105 69 C 110 69 113 75 114 84 Z" fill="#F8B014"/>
+    <path d="M 137 82 C 139 67 146 60 153 63 C 156 65 155 69 151 69 C 146 69 143 75 142 84 Z" fill="#F8B014"/>
+
+    <!-- Crisp golden coin disc -->
+    <defs>
+      <circle id="coin-disc" cx="128" cy="142" r="62"/>
+      <clipPath id="coin-clip"><use href="#coin-disc"/></clipPath>
+    </defs>
+    <use href="#coin-disc" fill="#F8B014"/>
+
+    <g clip-path="url(#coin-clip)">
+      <!-- Two clean dark-petrol bee stripes doubling as coin slot / ledger bars -->
+      <rect x="60" y="118" width="136" height="14" fill="#17313A"/>
+      <rect x="60" y="152" width="136" height="14" fill="#17313A"/>
+      <!-- One crisp vermilion tally accent bar in center -->
+      <rect x="114" y="136" width="28" height="12" rx="6" fill="#EC5331"/>
+    </g>
+
+    <!-- Subtle inner coin ring rim -->
+    <circle cx="128" cy="142" r="53" fill="none" stroke="#FFFBF3" stroke-width="4" opacity="0.45"/>
+  </g>
+</svg>

@@ -15,18 +15,18 @@
     </tr>
     <tr id="pocket-bookkeeper">
       <td>
-        <a href="pocket-bookkeeper/pocket-bookkeeper-v2.png"><img src="pocket-bookkeeper/pocket-bookkeeper-v2.png" width="96" height="96" alt="圆脸腮红的卡通小蜜蜂捧着摊开的账本，红铅笔落在 6.50 旁边"></a>
+        <a href="pocket-bookkeeper/pocket-bookkeeper-v2.png"><img src="pocket-bookkeeper/pocket-bookkeeper-v2.png" width="96" height="96" alt="扁平插画风格的小蜜蜂捧着摊开的账本，垂眼看着红铅笔落下的 6.50"></a>
         <img src="pocket-bookkeeper/pocket-bookkeeper-v2.png" width="24" height="24" alt="">
       </td>
-      <td><strong>小账房</strong><br>卡通萌版小蜂一只手托着账页，另一只手刚用红铅笔记下 6.50；保留初版作对比。<br><small>2026-11-25 · 保留备选</small></td>
-      <td><a href="pocket-bookkeeper/pocket-bookkeeper-v2.svg">卡通版 SVG</a> · <a href="pocket-bookkeeper/pocket-bookkeeper-v2.png">卡通版 PNG</a> · <a href="pocket-bookkeeper/pocket-bookkeeper.png">初版记账稿</a> · <a href="pocket-bookkeeper/reading-study.png">看账初稿</a> · <a href="pocket-bookkeeper/prompt.txt">生成提示词</a></td>
+      <td><strong>小账房</strong><br>去掉重描边与幼态五官，保留简洁温润的扁平插画小蜂捧账记下 6.50；保留初版作对比。<br><small>2026-11-25 · 保留备选</small></td>
+      <td><a href="pocket-bookkeeper/pocket-bookkeeper-v2.svg">扁平精修 SVG</a> · <a href="pocket-bookkeeper/pocket-bookkeeper-v2.png">扁平精修 PNG</a> · <a href="pocket-bookkeeper/pocket-bookkeeper.png">初版记账稿</a> · <a href="pocket-bookkeeper/reading-study.png">看账初稿</a> · <a href="pocket-bookkeeper/prompt.txt">生成提示词</a></td>
     </tr>
     <tr id="honey-jar">
       <td>
-        <a href="honey-jar/honey-jar.png"><img src="honey-jar/honey-jar.png" width="96" height="96" alt="燕麦底上一只圆脸腮红的卡通小蜜蜂双手扶在半满蜂蜜的陶罐口，罐颈挂着朱红小签"></a>
+        <a href="honey-jar/honey-jar.png"><img src="honey-jar/honey-jar.png" width="96" height="96" alt="燕麦底上一只干净扁平插画小蜜蜂双手扶在半满蜂蜜的陶罐口，罐颈挂着朱红小签"></a>
         <img src="honey-jar/honey-jar.png" width="24" height="24" alt="">
       </td>
-      <td><strong>蜜罐守账</strong><br>半满蜂蜜的奶白陶罐充当攒钱水位，卡通小蜂双手扶在罐口探头守账，颈间挂着朱红账签。<br><small>2026-11-25 · 探索稿</small></td>
+      <td><strong>蜜罐守账</strong><br>半满蜂蜜的奶白陶罐充当攒钱水位，简洁扁平的小蜂扶在罐口看守，颈间挂着朱红账签。<br><small>2026-11-25 · 探索稿</small></td>
       <td><a href="honey-jar/honey-jar.svg">可编辑 SVG</a> · <a href="honey-jar/honey-jar.png">1024 px PNG</a></td>
     </tr>
     <tr id="daily-tally">
@@ -55,11 +55,27 @@
     </tr>
     <tr id="folded-page">
       <td>
-        <a href="folded-page/folded-page.png"><img src="folded-page/folded-page.png" width="96" height="96" alt="蜜黄底上一张右下角折起的米白账页，右上角停着一只圆脸腮红的卡通小蜜蜂"></a>
+        <a href="folded-page/folded-page.png"><img src="folded-page/folded-page.png" width="96" height="96" alt="蜜黄底上一张右下角折起的暖白账页，右上角停着一只轻盈扁平的小蜜蜂"></a>
         <img src="folded-page/folded-page.png" width="24" height="24" alt="">
       </td>
-      <td><strong>折角账页</strong><br>右下角折起的暖白账页与留白处停驻的卡通小蜂，兼顾文具纸感与萌趣。<br><small>2026-11-25 · 探索稿</small></td>
+      <td><strong>折角账页</strong><br>右下角折起的暖白账页搭配简洁轻盈的扁平插画小蜂，保留克制的文具纸感。<br><small>2026-11-25 · 探索稿</small></td>
       <td><a href="folded-page/folded-page.svg">可编辑 SVG</a> · <a href="folded-page/folded-page.png">1024 px PNG</a></td>
+    </tr>
+    <tr id="coin-wing">
+      <td>
+        <a href="coin-wing/coin-wing.png"><img src="coin-wing/coin-wing.png" width="96" height="96" alt="深墨青底上一枚带双道蜂纹与一对米白飞翅的金黄硬币"></a>
+        <img src="coin-wing/coin-wing.png" width="24" height="24" alt="">
+      </td>
+      <td><strong>飞币蜂</strong><br>将金黄硬币化为蜜蜂身体，叠入双道墨青蜂纹、朱红记账横标与一对米白飞翅。<br><small>2026-11-25 · 探索稿</small></td>
+      <td><a href="coin-wing/coin-wing.svg">可编辑 SVG</a> · <a href="coin-wing/coin-wing.png">1024 px PNG</a></td>
+    </tr>
+    <tr id="keycap-bee">
+      <td>
+        <a href="keycap-bee/keycap-bee.png"><img src="keycap-bee/keycap-bee.png" width="96" height="96" alt="暖燕麦底上一枚带蜂纹与加号按键的琥珀色圆角按键，顶部展出一对米白蜂翅"></a>
+        <img src="keycap-bee/keycap-bee.png" width="24" height="24" alt="">
+      </td>
+      <td><strong>记账键蜂</strong><br>把随手记一笔的「+」号按键与蜜蜂条纹、双翅结合成一枚有按压感的圆角符号。<br><small>2026-11-25 · 探索稿</small></td>
+      <td><a href="keycap-bee/keycap-bee.svg">可编辑 SVG</a> · <a href="keycap-bee/keycap-bee.png">1024 px PNG</a></td>
     </tr>
     <tr id="hex-vault">
       <td>
