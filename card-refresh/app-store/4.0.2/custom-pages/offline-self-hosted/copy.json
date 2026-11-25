@@ -1,0 +1,98 @@
+{
+  "name": "开源记账 · 离线与自托管",
+  "localizations": {
+    "en-US": {
+      "promotionalText": "Keep your ledger on your device and record expenses offline. BeeCount's source code is open. For sync across devices, connect your own BeeCount Cloud server.",
+      "transaction": {
+        "ledger": "Everyday",
+        "currency": "USD",
+        "wallet": "Cash wallet",
+        "category": "Coffee",
+        "tag": "Everyday",
+        "amount": 5.5,
+        "note": "Latte at the corner café"
+      },
+      "headlines": {
+        "transaction": [
+          "Log expenses,",
+          "even offline."
+        ],
+        "server": [
+          "Sync with your",
+          "own server."
+        ],
+        "backup": [
+          "Choose where",
+          "to back up."
+        ]
+      },
+      "details": {
+        "transaction": "Record a purchase without signing in.",
+        "server": "Connect BeeCount Cloud when you need it.",
+        "backup": "iCloud, WebDAV, S3 and Supabase."
+      }
+    },
+    "zh-Hans": {
+      "promotionalText": "账本保存在自己的设备上，离线也能记下每一笔开支。蜜蜂记账的源代码公开可查。想在多台设备间同步时，可以连接自己部署的 BeeCount Cloud。",
+      "transaction": {
+        "ledger": "日常账本",
+        "currency": "CNY",
+        "wallet": "随身钱包",
+        "category": "咖啡",
+        "tag": "日常",
+        "amount": 26.5,
+        "note": "街角咖啡馆的一杯拿铁"
+      },
+      "headlines": {
+        "transaction": [
+          "离线也能",
+          "记好每一笔"
+        ],
+        "server": [
+          "在自己的",
+          "服务器上同步"
+        ],
+        "backup": [
+          "备份放哪里",
+          "由你来选"
+        ]
+      },
+      "details": {
+        "transaction": "不用注册，支出记在本机。",
+        "server": "需要多端同步时，连接 BeeCount Cloud。",
+        "backup": "iCloud、WebDAV、S3 与 Supabase。"
+      }
+    },
+    "zh-Hant": {
+      "promotionalText": "帳本儲存在自己的裝置上，離線也能記下每一筆開支。蜜蜂記帳的原始碼公開可查。想在多部裝置間同步時，可以連接自行架設的 BeeCount Cloud。",
+      "transaction": {
+        "ledger": "日常帳本",
+        "currency": "TWD",
+        "wallet": "隨身錢包",
+        "category": "咖啡",
+        "tag": "日常",
+        "amount": 90.0,
+        "note": "街角咖啡店的一杯拿鐵"
+      },
+      "headlines": {
+        "transaction": [
+          "離線也能",
+          "記好每一筆"
+        ],
+        "server": [
+          "在自己的",
+          "伺服器上同步"
+        ],
+        "backup": [
+          "備份存在哪",
+          "由你來選"
+        ]
+      },
+      "details": {
+        "transaction": "不用註冊，支出記在本機。",
+        "server": "需要多部裝置同步時，連接 BeeCount Cloud。",
+        "backup": "iCloud、WebDAV、S3 與 Supabase。"
+      }
+    }
+  }
+}

@@ -39,6 +39,10 @@ shasum -a 256 -c ../../treatments/offline/SHA256SUMS
 
 修改 B 文案时，编辑 `source/locales.json` 中的 `offlineHeadline`。在 `source/` 执行 `python3 refresh_fonts.py --offline` 更新字形，再运行 `npm run refresh:offline-headlines`，即可通过同一份 HTML 模板生成新的标题图层和三张搜索图。
 
+## 自定产品页面
+
+「开源记账 · 离线与自托管」页面归档了三种语言的推广文本、真实 App 画面和两种 iPhone 尺寸的 18 张截图。[设计与成品](custom-pages/offline-self-hosted/README.md)
+
 ## 构图与安全区
 
 坐标以成品左上角为原点，单位为像素。蜂和账本、搜索文案和账单行均完整落在相应安全区内。[Apple 素材规格](https://developer.apple.com/help/app-store-connect/reference/app-information/creative-assets-specifications/) · [Apple 设计指南与模板](https://developer.apple.com/app-store/asset-best-practices/)
