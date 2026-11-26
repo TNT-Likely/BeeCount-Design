@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>纸雕与平面 · 蜜蜂记账图标</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body { margin: 0; color: var(--foreground, CanvasText); font: 14px/1.45 var(--font-sans, -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif); }
+    main { max-width: 510px; margin: 0 auto; }
+    table { width: 100%; table-layout: fixed; border-collapse: collapse; }
+    col:first-child { width: 58px; }
+    th, td { padding: 9px 2px; text-align: center; }
+    thead th { font-weight: 600; }
+    tbody th { text-align: right; white-space: nowrap; font-weight: 400; color: var(--muted-foreground, GrayText); font-variant-numeric: tabular-nums; }
+    tbody tr + tr { border-top: 1px solid var(--border, color-mix(in srgb, currentColor 14%, transparent)); }
+    img { display: block; max-width: 100%; height: auto; margin: auto; border-radius: 22%; }
+  </style>
+</head>
+<body>
+  <main>
+    <table aria-label="同一构图的纸雕与平面图标在三个尺寸下的预览">
+      <colgroup><col><col><col></colgroup>
+      <thead><tr><th scope="col" aria-label="边长"></th><th scope="col">纸雕方裁</th><th scope="col">平面简化</th></tr></thead>
+      <tbody>
+        <tr>
+          <th scope="row">120 px</th>
+          <td><img src="bee-on-ledger-crop.png" width="120" height="120" alt="纸雕蜜蜂悬在打开的账本上"></td>
+          <td><img src="bee-on-ledger-flat-1024.png" width="120" height="120" alt="用色块表现同一只蜜蜂和账本"></td>
+        </tr>
+        <tr>
+          <th scope="row">60 px</th>
+          <td><img src="bee-on-ledger-crop.png" width="60" height="60" alt="60 像素纸雕图标"></td>
+          <td><img src="bee-on-ledger-flat-1024.png" width="60" height="60" alt="60 像素平面图标"></td>
+        </tr>
+        <tr>
+          <th scope="row">24 px</th>
+          <td><img src="bee-on-ledger-crop.png" width="24" height="24" alt="24 像素纸雕图标"></td>
+          <td><img src="bee-on-ledger-flat-1024.png" width="24" height="24" alt="24 像素平面图标"></td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+</body>
+</html>
