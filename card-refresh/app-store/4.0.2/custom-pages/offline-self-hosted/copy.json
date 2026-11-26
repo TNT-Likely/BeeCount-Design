@@ -3,6 +3,7 @@
   "localizations": {
     "en-US": {
       "promotionalText": "Keep your ledger on your device and record expenses offline. BeeCount's source code is open. For sync across devices, connect your own BeeCount Cloud server.",
+      "searchKeywords": ["self-hosted", "open source", "privacy"],
       "transaction": {
         "ledger": "Everyday",
         "currency": "USD",
@@ -34,6 +35,7 @@
     },
     "zh-Hans": {
       "promotionalText": "账本保存在自己的设备上，离线也能记下每一笔开支。蜜蜂记账的源代码公开可查。想在多台设备间同步时，可以连接自己部署的 BeeCount Cloud。",
+      "searchKeywords": ["自托管", "开源", "隐私"],
       "transaction": {
         "ledger": "日常账本",
         "currency": "CNY",
@@ -65,6 +67,7 @@
     },
     "zh-Hant": {
       "promotionalText": "帳本儲存在自己的裝置上，離線也能記下每一筆開支。蜜蜂記帳的原始碼公開可查。想在多部裝置間同步時，可以連接自行架設的 BeeCount Cloud。",
+      "searchKeywords": ["自託管", "開源", "隱私"],
       "transaction": {
         "ledger": "日常帳本",
         "currency": "TWD",
