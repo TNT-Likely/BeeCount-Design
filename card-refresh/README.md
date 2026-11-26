@@ -15,6 +15,8 @@
 | 紧凑布局 / 反馈状态 | [紧凑布局](boards/compact-pages.png) / [反馈](boards/feedback-pages.png) |
 | 完整 UI 组件规范大图 | [浅色](boards/ui-components-light.png) / [深色](boards/ui-components-dark.png) |
 | 按基础 / 业务分组的组件规范 | [components/ui-components.html](components/ui-components.html) |
+| 应用图标候选与小尺寸预览 | [图标创意库](icon-ideas/index.html) / [蜜蜂与账本的纸雕、平面对照](icon-ideas/bee-on-ledger/style-comparison.html) |
+| App Store 展示图、源稿与导出说明 | [4.0.2 商店素材](app-store/4.0.2/README.md) |
 | 组件约定 / 令牌 | [组件说明](components/COMPONENTS.md) / [设计令牌](tokens/design-tokens.json) |
 | 所有场景缩略图、平铺 / 分组与搜索 | [index.html](index.html) |
 | 现有 Figma 协作文件与导入说明 | [figma/README.md](figma/README.md) |
@@ -32,6 +34,8 @@ prototype/scene-presets.js  缩略图对应的交互状态
 prototype/assets/       合成图标、附件示例
 prototype/vendor/       本地 Lucide 与许可
 components/             组件规范、样例、样式和映射
+icon-ideas/             应用图标候选、源稿与尺寸对照
+app-store/              按版本归档的商店素材与导出文件
 reference/recording/     当前记账评审稿的逐场景设计参考图
 boards/                 全量、主要页面、组件等里程碑大图
 screens/manifest.json   页面/分组/图片/SVG/场景映射
