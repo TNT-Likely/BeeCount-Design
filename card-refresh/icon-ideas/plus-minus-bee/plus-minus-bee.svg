@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">蜜蜂记账 · 收支蜂</title>
+  <desc id="desc">麦纸色底上的墨蓝蜂形。腹部露出两道蜂蜡金色的横纹，上方是加号，下方是减号。</desc>
+  <rect id="background" width="256" height="256" fill="#F3EADA"/>
+  <g id="mark" fill="#26364A">
+    <path id="left-wing" fill-rule="evenodd" d="
+      M 86 129 C 63 130 37 117 32 95 C 28 79 35 65 49 62 C 66 58 82 74 89 94
+      C 93 106 93 118 92 125 Q 92 129 86 129 Z
+      M 78 115 C 76 95 65 78 54 77 C 48 77 45 82 46 89 C 48 100 63 111 78 115 Z"/>
+    <path id="right-wing" fill-rule="evenodd" d="
+      M 168 126 C 163 106 172 78 187 64 C 200 51 216 53 222 65 C 232 86 213 111 191 121
+      C 182 126 175 128 171 128 Q 169 128 168 126 Z
+      M 182 111 C 197 105 210 91 211 80 C 212 72 208 68 202 71 C 192 76 183 93 182 111 Z"/>
+    <g id="feelers" fill="none" stroke="#26364A" stroke-width="6.5" stroke-linecap="round">
+      <path d="M120 72 Q117 59 106 54"/>
+      <path d="M136 71 Q139 58 150 52"/>
+    </g>
+    <path id="head" d="M108 87 C108 73 116 65 128 65 C140 65 148 73 148 87 Q128 79 108 87 Z"/>
+    <rect id="wax-inlay" x="101" y="102" width="54" height="56" rx="4" fill="#F5C052"/>
+    <path id="striped-body" fill-rule="evenodd" d="
+      M128 87 C154 87 171 104 171 129 C171 162 152 191 131 206
+      Q128 209 125 206 C103 190 85 165 85 133 C85 105 101 87 128 87 Z
+      M123 106 H133 V117 H150 Q152 117 152 119 V126 Q152 128 150 128 H133 V138 H123 V128 H106
+      Q104 128 104 126 V119 Q104 117 106 117 H123 Z
+      M106 146 H150 Q152 146 152 148 V155 Q152 157 150 157 H106 Q104 157 104 155 V148 Q104 146 106 146 Z"/>
+  </g>
+</svg>

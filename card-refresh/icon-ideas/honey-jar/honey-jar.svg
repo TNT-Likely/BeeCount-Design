@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">蜜蜂记账 · 蜜罐守账（扁平插画精修版）</title>
+  <desc id="description">暖燕麦底上，一只线条干净的扁平插画小蜜蜂伏在半满蜂蜜的奶白陶罐口往下看，罐旁垂着朱红小签。</desc>
+  <rect id="background" width="256" height="256" fill="#ECD6B2"/>
+
+  <!-- Soft un-outlined ivory wings behind bee -->
+  <g id="wings">
+    <path d="M 96 86 C 60 88 42 70 50 52 C 58 34 88 46 102 76 Z" fill="#FFFBF3"/>
+    <path d="M 160 86 C 196 88 214 70 206 52 C 198 34 168 46 154 76 Z" fill="#FFFBF3"/>
+  </g>
+
+  <!-- Subtle striped bee shoulders tucked cleanly behind head -->
+  <g id="bee-body">
+    <ellipse cx="128" cy="102" rx="25" ry="18" fill="#1C2E36"/>
+  </g>
+
+  <!-- Clean flat-editorial bee head peering into the pot (no heavy outline, no pink cheeks, no w-mouth) -->
+  <g id="bee-head">
+    <!-- Short tidy antennae -->
+    <path d="M 111 47 C 106 34 97 30 90 34 C 88 35 88 39 91 39 C 97 39 102 43 106 50 Z" fill="#1C2E36"/>
+    <path d="M 145 47 C 150 34 159 30 166 34 C 168 35 168 39 165 39 C 159 39 154 43 150 50 Z" fill="#1C2E36"/>
+
+    <defs>
+      <path id="hj-clean-head" d="
+        M 128 43
+        C 150 43 166 55 169 73
+        C 172 91 159 108 128 108
+        C 97 108 84 91 87 73
+        C 90 55 106 43 128 43 Z"/>
+      <clipPath id="hj-clean-clip"><use href="#hj-clean-head"/></clipPath>
+    </defs>
+
+    <use href="#hj-clean-head" fill="#F8AF14"/>
+    <g clip-path="url(#hj-clean-clip)">
+      <!-- Subtle dark crown cap -->
+      <path d="M 95 57 C 107 43 118 40 128 40 C 138 40 149 43 161 57 C 148 52 138 51 128 53 C 118 51 108 52 95 57 Z" fill="#1C2E36"/>
+      <ellipse cx="128" cy="106" rx="42" ry="10" fill="#E39307" opacity="0.4"/>
+    </g>
+
+    <!-- Calm oval eyes gazing down into the honey -->
+    <ellipse cx="111" cy="81" rx="4.4" ry="6" transform="rotate(-8 111 81)" fill="#1C2E36"/>
+    <ellipse cx="145" cy="81" rx="4.4" ry="6" transform="rotate(8 145 81)" fill="#1C2E36"/>
+  </g>
+
+  <!-- Clean flat-editorial honey pot (no heavy cartoon outline) -->
+  <g id="honey-pot">
+    <defs>
+      <path id="pot-body" d="
+        M 84 118
+        H 172
+        C 194 131 205 153 203 178
+        C 201 204 180 221 152 224
+        H 104
+        C 76 221 55 204 53 178
+        C 51 153 62 131 84 118 Z"/>
+      <clipPath id="pot-clip">
+        <use href="#pot-body"/>
+      </clipPath>
+    </defs>
+
+    <use href="#pot-body" fill="#FFFBF3"/>
+    <g clip-path="url(#pot-clip)">
+      <path d="M 46 158 Q 87 151 128 158 T 210 158 L 210 232 L 46 232 Z" fill="#F7AA00"/>
+      <!-- Clean flat base band grounding the pot -->
+      <rect x="46" y="216" width="164" height="14" fill="#1C2E36"/>
+    </g>
+
+    <!-- Pot collar rim -->
+    <rect x="76" y="106" width="104" height="16" rx="8" fill="#1C2E36"/>
+
+    <!-- Vermilion ledger tag -->
+    <path d="M 164 120 L 171 133" stroke="#1C2E36" stroke-width="3.2" stroke-linecap="round"/>
+    <path d="M 164 129 L 184 128 L 188 156 L 168 159 L 161 134 Z" fill="#EC5331"/>
+    <circle cx="171" cy="135" r="2.3" fill="#FFFBF3"/>
+  </g>
+
+  <!-- Two neat little dark-petrol paws resting on the collar -->
+  <g id="paws">
+    <ellipse cx="99" cy="110" rx="9.5" ry="6.5" fill="#1C2E36"/>
+    <ellipse cx="157" cy="110" rx="9.5" ry="6.5" fill="#1C2E36"/>
+  </g>
+</svg>

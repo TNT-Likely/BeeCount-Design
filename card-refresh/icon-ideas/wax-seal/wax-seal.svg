@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">蜜蜂记账 · 火漆蜂印</title>
+  <desc id="description">暖燕麦色底上，一枚朱红蜡质火漆印章中央压印着圆润可爱的金黄小蜜蜂。</desc>
+  <rect id="background" width="256" height="256" fill="#F4E3C8"/>
+
+  <!-- Organic scalloped wax seal outer rim -->
+  <g id="wax-seal">
+    <path d="
+      M 128 32
+      C 146 31 159 38 172 44
+      C 188 51 205 63 211 80
+      C 217 97 224 111 223 129
+      C 222 148 219 164 209 180
+      C 198 197 183 211 165 217
+      C 147 223 134 226 116 222
+      C 97 218 76 212 63 197
+      C 48 181 36 162 35 140
+      C 33 118 37 97 48 79
+      C 60 61 77 45 97 38
+      C 109 34 117 32 128 32 Z" fill="#B53822" transform="translate(0 5)"/>
+    <path d="
+      M 128 32
+      C 146 31 159 38 172 44
+      C 188 51 205 63 211 80
+      C 217 97 224 111 223 129
+      C 222 148 219 164 209 180
+      C 198 197 183 211 165 217
+      C 147 223 134 226 116 222
+      C 97 218 76 212 63 197
+      C 48 181 36 162 35 140
+      C 33 118 37 97 48 79
+      C 60 61 77 45 97 38
+      C 109 34 117 32 128 32 Z" fill="#DE4C31"/>
+    <circle cx="128" cy="128" r="70" fill="#C73F27"/>
+    <circle cx="128" cy="128" r="62" fill="#DE4C31"/>
+  </g>
+
+  <!-- Refined plump side-profile bee inside the wax seal -->
+  <g id="seal-bee" transform="translate(128 130)">
+    <!-- Soft symmetrical wings -->
+    <path d="M -8 -8 C -24 -32 -52 -24 -50 -3 C -48 14 -26 18 -10 8 Z" fill="#FFF3D6"/>
+    <path d="M 8 -8 C 24 -32 52 -24 50 -3 C 48 14 26 18 10 8 Z" fill="#FFF3D6"/>
+
+    <!-- Smooth plump oval-teardrop abdomen (no side bulges) -->
+    <path d="M 0 -14 C 19 -14 28 1 25 20 C 22 35 10 44 0 46 C -10 44 -22 35 -25 20 C -28 1 -19 -14 0 -14 Z" fill="#F9C95A"/>
+    <path d="M -22 7 Q 0 13 22 7" fill="none" stroke="#DE4C31" stroke-width="7.5" stroke-linecap="round"/>
+    <path d="M -18 23 Q 0 28 18 23" fill="none" stroke="#DE4C31" stroke-width="7.5" stroke-linecap="round"/>
+
+    <!-- Cute round head + lower-spaced friendly eyes + short antennae -->
+    <circle cx="0" cy="-21" r="16" fill="#FFF3D6"/>
+    <path d="M -6 -34 C -9 -42 -15 -45 -20 -42" fill="none" stroke="#FFF3D6" stroke-width="5" stroke-linecap="round"/>
+    <path d="M 6 -34 C 9 -42 15 -45 20 -42" fill="none" stroke="#FFF3D6" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="-6" cy="-19" r="2.7" fill="#C73F27"/>
+    <circle cx="6" cy="-19" r="2.7" fill="#C73F27"/>
+  </g>
+</svg>

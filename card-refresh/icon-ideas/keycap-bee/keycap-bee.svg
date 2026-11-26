@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">蜜蜂记账 · 记账键蜂</title>
+  <desc id="description">暖燕麦底上，一枚带蜂纹与加号按键的琥珀色圆角按键长出米白蜂翅，象征随手记一笔。</desc>
+  <rect id="background" width="256" height="256" fill="#F6E2C0"/>
+
+  <!-- Plump cream wings sprouting from top corners of the tactile keycap -->
+  <g id="wings">
+    <path d="M 98 92 C 62 94 34 74 38 52 C 42 32 76 38 106 78 Z" fill="#FFFBF3"/>
+    <path d="M 158 92 C 194 94 222 74 218 52 C 214 32 180 38 150 78 Z" fill="#FFFBF3"/>
+  </g>
+
+  <!-- Tactile rounded squircle keycap (BeeCount "+" quick-add button meets honeybee) -->
+  <g id="keycap">
+    <!-- Keycap shadow lip -->
+    <rect x="64" y="88" width="128" height="124" rx="34" fill="#1C2E36"/>
+    <!-- Main golden key face -->
+    <defs>
+      <rect id="key-face" x="64" y="76" width="128" height="122" rx="34"/>
+      <clipPath id="key-clip"><use href="#key-face"/></clipPath>
+    </defs>
+    <use href="#key-face" fill="#F8AF14"/>
+    <g clip-path="url(#key-clip)">
+      <!-- Two subtle horizontal bee bands at lower edge -->
+      <rect x="60" y="166" width="136" height="11" fill="#1C2E36"/>
+      <rect x="60" y="185" width="136" height="11" fill="#1C2E36"/>
+    </g>
+
+    <!-- Crisp deep-petrol "+" quick-record mark (avoids medical-cross read) + subtle vermilion accent dot -->
+    <rect x="120" y="100" width="16" height="48" rx="8" fill="#1C2E36"/>
+    <rect x="104" y="116" width="48" height="16" rx="8" fill="#1C2E36"/>
+    <circle cx="163" cy="99" r="6.5" fill="#EC5331"/>
+
+    <!-- Tiny upturned feelers above the keycap -->
+    <path d="M 110 77 C 106 62 98 56 91 59 C 88 61 89 65 93 65 C 99 65 103 70 105 78 Z" fill="#1C2E36"/>
+    <path d="M 146 77 C 150 62 158 56 165 59 C 168 61 167 65 163 65 C 157 65 153 70 151 78 Z" fill="#1C2E36"/>
+  </g>
+</svg>
